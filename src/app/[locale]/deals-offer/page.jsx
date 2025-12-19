@@ -1,11 +1,7 @@
-// import DealsAndOfferBannerSection from "@/components/dealsAndOffer/DealsAndOfferBannerSection";
-// import DealsFromBrandSection from "@/components/dealsandoffer/DealsFromBrandSection";
-// import NewArrivalSection from "@/components/dealsandoffer/NewArrivalSection";
-// import ProductCatalog from "@/components/dealsandoffer/ProductCatalog";
-import DealsAndOfferBannerSection from "@/components/dealsandoffer/BannerSection";
-import DealsFromBrandSection from "@/components/dealsandoffer/DealsFromBrandSection";
-import NewArrivalSection from "@/components/dealsandoffer/NewArrivalSection";
-import ProductCatalog from "@/components/dealsandoffer/ProductCatalog";
+import DealsAndOfferBannerSection from "@/components/dealsandoffer/BannerSection/index.jsx";
+import DealsFromBrandSection from "@/components/dealsandoffer/DealsFromBrandSection/index.jsx";
+import NewArrivalSection from "@/components/dealsandoffer/NewArrivalSection/index.jsx";
+import ProductCatalog from "@/components/dealsandoffer/ProductCatalog/index.jsx";
 const DealsAndOffer = () => {
   return (
     <section className="container flex flex-col gap-14">

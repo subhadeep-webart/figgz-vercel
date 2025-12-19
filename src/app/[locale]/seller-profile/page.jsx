@@ -1,9 +1,9 @@
-import SellerProfileBannerSection from "@/components/sellerprofile/SellerProfileBannerSection";
-import BestDealsSection from "@/components/sellerprofile/BestDealsSection";
-import CollectionSection from "@/components/sellerprofile/CollectionSection";
-import EverydayStyleSection from "@/components/sellerprofile/EverydayStyleSection";
-import HotPicksSection from "@/components/sellerprofile/HotPicksSection";
-import MoreProductSection from "@/components/sellerprofile/MoreProductSection";
+import SellerProfileBannerSection from "@/components/sellerprofile/SellerProfileBannerSection/index.jsx";
+import BestDealsSection from "@/components/sellerprofile/BestDealsSection/index.jsx";
+import CollectionSection from "@/components/sellerprofile/CollectionSection/index.jsx";
+import EverydayStyleSection from "@/components/sellerprofile/EverydayStyleSection/index.jsx";
+import HotPicksSection from "@/components/sellerprofile/HotPicksSection/index.jsx";
+import MoreProductSection from "@/components/sellerprofile/MoreProductSection/index.jsx";
 
 
 const SellerProfile=()=>{
