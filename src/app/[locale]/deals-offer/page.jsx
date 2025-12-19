@@ -3,6 +3,7 @@ import DealsFromBrandSection from "@/components/dealsandoffer/DealsFromBrandSect
 import NewArrivalSection from "@/components/dealsandoffer/NewArrivalSection";
 import ProductCatalog from "@/components/dealsandoffer/ProductCatalog";
 
+
 const DealsAndOffer = () => {
   return (
     <section className="container flex flex-col gap-14">

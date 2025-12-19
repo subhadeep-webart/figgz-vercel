@@ -5,6 +5,7 @@ import EverydayStyleSection from "@/components/sellerprofile/EverydayStyleSectio
 import HotPicksSection from "@/components/sellerprofile/HotPicksSection";
 import MoreProductSection from "@/components/sellerprofile/MoreProductSection";
 
+
 const SellerProfile=()=>{
     return(
         <section className="container flex flex-col gap-16">
