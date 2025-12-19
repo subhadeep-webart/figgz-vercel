@@ -1,0 +1,20 @@
+.sidebar_wrapper {
+    width: 30%;
+    padding-inline: 38px;
+    position: relative;
+    border-radius: 20px;
+    padding-inline: 38px;
+    padding-block: 40px;
+}
+
+.sidebar_wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 1.25px;
+    background: linear-gradient(180deg, #F48B22 0%, rgba(142, 81, 20, 0.05) 100%);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+}

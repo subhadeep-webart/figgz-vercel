@@ -1,0 +1,16 @@
+import ProductCategoryCard from "@/components/ui/Cards/ProductCategoryCard";
+
+const CategoryList = () => {
+    return (
+        <div className="w-full grid grid-cols-6 gap-8">
+            <ProductCategoryCard item={{ categoryName: "Beauty" }} />
+            <ProductCategoryCard item={{ categoryName: "Beauty" }} />
+            <ProductCategoryCard item={{ categoryName: "Beauty" }} />
+            <ProductCategoryCard item={{ categoryName: "Beauty" }} />
+            <ProductCategoryCard item={{ categoryName: "Beauty" }} />
+            <ProductCategoryCard item={{ categoryName: "Beauty" }} />
+        </div>
+    )
+}
+
+export default CategoryList;

@@ -1,0 +1,8 @@
+.user_avatar_wrappper{
+    width: 98px;
+    height: 98px;
+    border: 8px solid white;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}

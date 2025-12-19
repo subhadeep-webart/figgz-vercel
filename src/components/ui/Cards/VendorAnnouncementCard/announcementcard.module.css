@@ -1,0 +1,9 @@
+.announcement_inner {
+    background: linear-gradient(292.71deg, rgba(254, 168, 0, 0.6) -68.62%, rgba(254, 168, 0, 0) 45%),
+        linear-gradient(280.94deg, rgba(254, 168, 0, 0) 57.93%, rgba(254, 168, 0, 0.25) 103.02%);
+    padding-inline: 32px;
+    padding-block: 16px;
+    color: var(--text-vendor-sidebar);
+    border-radius: 16px;
+    box-shadow: 0 1px rgb(0 0 0 / 0.05);
+}

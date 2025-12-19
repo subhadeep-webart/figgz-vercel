@@ -1,0 +1,12 @@
+const DashboardCardContainerWrapper = ({ headerName = "", children }) => {
+    return (
+        <div className="w-full flex flex-col gap-4">
+            {headerName && <h4 className="text-avatar-heading text-lg font-semibold">{headerName}</h4>}
+            <div className="w-full grid grid-cols-4">
+                {children}
+            </div>
+        </div>
+    )
+}
+
+export default DashboardCardContainerWrapper;

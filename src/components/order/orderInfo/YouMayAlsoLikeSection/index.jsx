@@ -1,0 +1,54 @@
+import ProductDetailsContainer from "@/components/product-listing/ProductContainer/ProductDetailsContainer";
+import ProductCatalogSectionWrapper from "@/components/shared/Wrapper/ProductCatalogSectionWrapper";
+import ProductCard from "@/components/ui/Cards/ProductCard";
+import ProductCardImageContainer from "@/components/ui/Cards/ProductCard/ProductCardImageContainer";
+
+const YouMayAlsoLikeSection = () => {
+  return (
+    <section>
+      <ProductCatalogSectionWrapper
+        id="you_may_also_like"
+        headerText="You May Also Like"
+        isButton={false}
+        isSelect={false}
+      >
+        <div className="grid grid-cols-4 gap-7">
+          <ProductCard className="max-w-80">
+            <ProductCardImageContainer />
+            <ProductDetailsContainer />
+          </ProductCard>
+          <ProductCard className="max-w-80">
+            <ProductCardImageContainer />
+            <ProductDetailsContainer />
+          </ProductCard>
+          <ProductCard className="max-w-80">
+            <ProductCardImageContainer />
+            <ProductDetailsContainer />
+          </ProductCard>
+          <ProductCard className="max-w-80">
+            <ProductCardImageContainer />
+            <ProductDetailsContainer />
+          </ProductCard>
+          <ProductCard className="max-w-80">
+            <ProductCardImageContainer />
+            <ProductDetailsContainer />
+          </ProductCard>
+          <ProductCard className="max-w-80">
+            <ProductCardImageContainer />
+            <ProductDetailsContainer />
+          </ProductCard>
+          <ProductCard className="max-w-80">
+            <ProductCardImageContainer />
+            <ProductDetailsContainer />
+          </ProductCard>
+          <ProductCard className="max-w-80">
+            <ProductCardImageContainer />
+            <ProductDetailsContainer />
+          </ProductCard>
+        </div>
+      </ProductCatalogSectionWrapper>
+    </section>
+  );
+};
+
+export default YouMayAlsoLikeSection;

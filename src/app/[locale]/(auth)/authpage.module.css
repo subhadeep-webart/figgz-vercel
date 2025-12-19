@@ -1,0 +1,43 @@
+.auth_bg {
+  background-image: url("/images/background_images/auth_bg_image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 28px;
+  padding-bottom: 108px;
+  border-top: 1px solid #C3C3C3;
+}
+
+.login::after {
+  content: "";
+  display: block;
+  width: 430px;
+  height: 430px;
+  background-image: url("/images/auth/Login_page_man.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -130px;
+  left: 60px;
+}
+
+.signup::after {
+  content: "";
+  display: block;
+  width: 430px;
+  height: 430px;
+  background-image: url("/images/auth/Signup_man.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -100px;
+  right: 60px;
+}
