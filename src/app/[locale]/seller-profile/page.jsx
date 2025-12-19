@@ -1,4 +1,4 @@
-import SellerProfileBannerSection from "@/components/sellerprofile/BannerSection";
+import SellerProfileBannerSection from "@/components/sellerProfile/SellerProfileBannerSection";
 import BestDealsSection from "@/components/sellerprofile/BestDealsSection";
 import CollectionSection from "@/components/sellerprofile/CollectionSection";
 import EverydayStyleSection from "@/components/sellerprofile/EverydayStyleSection";

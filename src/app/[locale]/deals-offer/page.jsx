@@ -1,4 +1,4 @@
-import DealsAndOfferBannerSection from "@/components/dealsandoffer/BannerSection";
+import DealsAndOfferBannerSection from "@/components/dealsAndOffer/DealsAndOfferBannerSection";
 import DealsFromBrandSection from "@/components/dealsandoffer/DealsFromBrandSection";
 import NewArrivalSection from "@/components/dealsandoffer/NewArrivalSection";
 import ProductCatalog from "@/components/dealsandoffer/ProductCatalog";
@@ -9,7 +9,7 @@ const DealsAndOffer = () => {
     <section className="container flex flex-col gap-14">
       <DealsAndOfferBannerSection />
       <DealsFromBrandSection />
-      <ProductCatalog/>
+      <ProductCatalog />
       <NewArrivalSection />
     </section>
   );
