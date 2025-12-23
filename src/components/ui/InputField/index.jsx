@@ -1,7 +1,7 @@
 "use client";
 
 import { Icons } from "@/assets";
-import { Input, cn } from "@heroui/react"; 
+import { Input, cn } from "@heroui/react";
 import { useState } from "react";
 
 const InputField = ({
@@ -9,7 +9,7 @@ const InputField = ({
   type = "",
   label = "",
   placeholder = "",
-  classNames = {}  
+  classNames = {}
 }) => {
   const [showPassword, setShowPassword] = useState(false);
   const isPassword = type === "password";
@@ -17,40 +17,40 @@ const InputField = ({
   const defaultClassNames = {
     label: [
       "font-semibold",
-      "text-sm",
-      "text-[#000000]",
+      "text-base",
+      "text-black",
       "mb-2",
     ],
 
     inputWrapper: [
-      "bg-white",
-      "hover:bg-white",
-      "focus:bg-white",
-      "active:bg-white",
+      "bg-transparent",
+      "hover:bg-transparent",
+      "focus:bg-transparent",
+      "active:bg-transparent",
 
-      "data-[hover=true]:bg-white",
-      "data-[focus=true]:bg-white",
+      "data-[hover=true]:bg-transparent",
+      "data-[focus=true]:bg-transparent",
       "data-[focus-visible=true]:shadow-none",
-      "data-[pressed=true]:bg-white",
+      "data-[pressed=true]:bg-transparent",
 
-      "data-[filled=true]:bg-white",
-      "data-[filled=true]:data-[hover=true]:bg-white",
-      "data-[filled=true]:data-[focus=true]:bg-white",
+      "data-[filled=true]:bg-transparent",
+      "data-[filled=true]:data-[hover=true]:bg-transparent",
+      "data-[filled=true]:data-[focus=true]:bg-transparent",
 
       "!shadow-none",
       "border-0",
       "border-b",
-      "border-[#C3C3C3]",
+      "border-secondary",
       "rounded-none",
       "px-0",
     ],
 
     input: [
-      "text-base",
+      "text-black",
       "font-normal",
-      "placeholder:text-[#919191]",
+      "placeholder:text-info",
       "placeholder:font-normal",
-      "placeholder:text-[15px]",
+      "placeholder:text-base",
     ],
   };
 

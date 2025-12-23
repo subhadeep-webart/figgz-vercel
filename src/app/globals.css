@@ -1,256 +1,49 @@
 @import "tailwindcss";
 @plugin '../hero.js';
-/* Note: You may need to change the path to fit your project structure */
 @source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
-/* @custom-variant dark (&:is(.dark *)); */
-@import "swiper/css";
-@import "swiper/css/navigation";
-@import "swiper/css/pagination";
 
 :root {
-  --background: #ffffff;
-  --foreground: #292929;
-  --primary: #fea800;
-  --secondary: #1b3042;
-  --info: #0055b8;
-  --raisin: #222222;
-  --faded: #c9c9c9;
-  --wish-icon: #f8446b;
-  --bg-otp-icon: #d9d9d9;
-  --bg-otp-icon: #d9d9d9;
-  --banner-btn: #003984;
-  --bg-footer-bottom: #2B2A2A;
-  --bg-shopping-cart: #F5F6F8;
-  --bg-delivery-address: #E6E9F0;
-  /* border color*/
-  --border-base: #c3c3c3;
-  --border-secondary: #c9c9c9;
-  --border-image-wrapper: #d0d0d0;
-  --border-icon: #cfcfcf;
-  --border-category: #bfbebe;
-  --border-seller-card: #cc8700;
-  --border-product-filter: #F48B22;
-  --border-size-color: #DCDCDC;
-  --border-product-description: #AFAFAF80;
-  --border-cupon-code: #C7C5C5;
-  --border-select-item: #DEDEDE;
-  --border-seller-dashed: #23435B --border-select-item: #DEDEDE;
-  /* text color*/
-  --text-base: #5e5e5e;
-  --text-secondary: #6e6e6e;
-  --text-info: #3f3f3f;
-  --text-success: #177712;
-  --text-warning: #E57525;
-  --text-danger: #E35252;
-  --text-otp: #9d9d9d;
-  --text-otp-resend: #474747;
-  --text-forgot-pass: #919191;
-  --text-otp: #9d9d9d;
-  --text-otp-resend: #474747;
-  --text-footer-bottom: #848484;
-  --text-green-default: #236E26;
-  --text-gray-default: #8D8D8D;
-  --text-display-info: #817777;
-  --text-cart-select: #A1A1A1;
-  --checkbox-text: #413E3E;
-  --product-text-secondary: #6C6C6C;
-  --product-text-base: #191818;
-  --product-text-info: #565656;
-  --product-text-info2: #929292;
-  --product-text-strike: #A9A8A8;
-  --text-payment-info: #606060;
+  --background: #fafbec;
+  --foreground: #000000;
+  --primary: #ffa310;
+  --almost-black: #252525;
+  --dark-gray: #a9a9a9;
+  --neutral-gray: #c9c9c9;
+  --mustard-yellow: #fcdb5a;
+  --charcoal: #3f3f3f;
+  --light-gray: #bcbbbb;
+  --medium-gray: #676767;
+  --secondary: #c3c3c3;
+  --info: #919191;
+  --link: #0055b8;
+  --graphite-gray: #4e4e4e;
+  --gunmetal-gray: #323232;
+  --slate-gray: #7e7e7e;
+  --soft-black: #181818;
+  --greige: #b5b0ab;
+  --rich-black: #101010;
+  --off-white: #ededed;
+  --golden-yellow: #f9c638;
+  --coral-red: #FD4F38;
+  --cool-gray: #D7D6D6;
+  --granite-gray: #727272;
+  --dim-gray:#5F5F5F;
+  --granite-gray:#727272;
+  --jet2-gray:#272727;
+  --amber:#FFB027;
 
-  /* dashboard */
-  --bg-sidebar-icon-container: #F2F2F3;
-  --text-sidebar-icon: #A9A9A9;
-  --text-sidebar-lucide: #6B6B6B;
-  --text-sidebar: #666666;
-
-  /*vendor dashboard*/
-  --text-vendor-base: #21201A;
-  --text-vendor-warning: #F57B20;
-  --text-vendor-danger: #A7575B;
-  --text-vendor-info: #0C9FA1;
-  --text-vendor-success: #06713A;
-  --text-vendor-sidebar: #1E4240;
-  --text-sidebar-lucide: #636363;
-  --border-vendor-avatar: #FA69BF;
-  --text-avatar-heading: #1B3139;
-  --border-sidebar-divider: #E4E4E4;
-  /*vendor dashboard card*/
-  --text-vendor-card-success: #CDFEF3;
-  --text-vendor-card-warning: #F9ECE2;
-  --text-vendor-card-info: #E2E7FF;
-  --border-vendor-border-success: #3BB29F;
-  --text-invoice-text: #006F70;
-  --text-invoice-date: #767676;
-  --text-top-product-chip: #015555;
-  --text-card-header: #758282;
-  --text-vendor-section-header: #9C9C9C;
-  --text-product-active: #092D63;
-  --border-product-search: #D5D5D5;
-  --border-top-product-chip: #C8D8D8;
-  --border-vendor-card-header: #CEBA18;
-  --border-vendor-table-divider: #E5E5E5;
-  --ring-color: #003984;
-  /* Your banner-btn color */
-  --ring-thickness: 2px;
-  /* Order History Table*/
-  --bg-order-table-header: #D9E0E6;
-  --text-everyday: #272727;
-  --order-banner-text: #FFF3EB;
-  --order-banner-text-2: #E5E5E5;
-  --order-banner-text-3: #D4D4D4;
-  --order-banner-text-4: #EED5A4;
-  --order-infos-text: #838383;
-  --order-info-border: #A2A2A2;
-
-
-  --bg-seller-seasonal-wear-badge:#F2A249;
-  --deals-offer-text:#4D4343;
-  --deals-offer-text-2:#414042;
-  --deals-offer-text-3:#9E750B;
-  --border-brands:#F9DEC3;
-  
-  --bg-seller-seasonal-wear-badge: #F2A249;
-  --deals-offer-text: #4D4343;
-  --deals-offer-text-2: #414042;
-  --deals-offer-text-3: #9E750B;
-  --border-deals-catalog: #9DA1A4;
-  --text-deals-catalog-text: #4A4F52;
-  --border-on-the-way:#EC9C00;
-  --border-on-the-way-2:#457108;
-  --text-accordion-content: #292D32;
-  --text-contact-us:#4C4848;
-  --contact-card-bg:#F2F2F2;
-  --contact-card-border:#E0E0E0;
-
-}
-
-@utility container {
-  margin-inline: auto !important;
-  padding-inline: 1rem !important;
-  max-width: var(--container-max, 1320px);
-}
-
-@theme {
-  --container-max: 1320px;
-
-  --breakpoint-sm: 540px;
-  --breakpoint-md: 720px;
-  --breakpoint-lg: 960px;
-  --breakpoint-xl: 1140px;
-  --breakpoint-2xl: 1320px;
-
-  --color-primary: var(--primary);
-  --color-secondary: var(--secondary);
-  --color-info: var(--info);
-  --color-raisin: var(--raisin);
-  --color-faded: var(--faded);
-  --color-wish-icon: var(--wish-icon);
-  --color-text-base: var(--text-base);
-  --color-text-secondary: var(--text-secondary);
-  --color-border-base: var(--border-base);
-  --color-border-seondary: var(--border-secondary);
-  --color-text-info: var(--text-info);
-  --color-text-otp: var(--text-otp);
-  --color-text-otp-resend: var(--text-otp-resend);
-  --color-bg-otp-icon: var(--bg-otp-icon);
-  --color-image-wrapper: var(--border-image-wrapper);
-  --color-border-icon: var(--border-icon);
-  --color-text-forgot-pass: var(--text-forgot-pass);
-  --color-border-category: var(--border-category);
-  --color-border-seller-card: var(--border-seller-card);
-  --color-banner-btn: var(--banner-btn);
-  --color-border-product-filter: var(--border-product-filter);
-  --color-text-footer-bottom: var(--text-footer-bottom);
-  --color-bg-footer-bottom: var(--bg-footer-bottom);
-  --color-green-default: var(--text-green-default);
-  --color-gray-default: var(--text-gray-default);
-  --color-text-display-info: var(--text-display-info);
-  --color-checkbox-text: var(--checkbox-text);
-  --color-product-text-secondary: var(--product-text-secondary);
-  --color-product-text-base: var(--product-text-base);
-  --color-product-text-info: var(--product-text-info);
-  --color-procut-text-strike: var(--product-text-strike);
-  --color-border-size-color: var(--border-size-color);
-  --color-border-product-description: var(--border-product-description);
-  --color-shopping-cart: var(--bg-shopping-cart);
-  --color-cart-select: var(--text-cart-select);
-  --color-payment-info: var(--text-payment-info);
-  --color-cupon-code: var(--border-cupon-code);
-  --color-delivery-address: var(--bg-delivery-address);
-  --color-product-text-info2: var(--product-text-info2);
-  --color-border-select-item: var(--border-select-item);
-  --color-sidebar-icon-container: var(--bg-sidebar-icon-container);
-  --color-sidebar-icon: var(--text-sidebar-icon);
-  --color-sidebar-lucide: var(--text-sidebar-lucide);
-  --color-sidebar-text: var(--text-sidebar);
-  --color-order-table-header: var(--bg-order-table-header);
-  --color-warning: var(--text-warning);
-  --color-success: var(--text-success);
-  --color-danger: var(--text-danger);
-  --color-product-text-info-2: var(--bg-product-text-info-2);
-  --color-border-select-item: var(--bg-border-select-item);
-  --color-text-everyday:var(--text-everyday);
-  --color-border-seller-dashed:var(--border-seller-dashed);
-  --color-bg-seller-seasonal-wear-badge:var(--bg-seller-seasonal-wear-badge);
-  --color-order-banner-text:var(--order-banner-text);
-  --color-order-banner-text-2:var(--order-banner-text-2);
-  --color-order-banner-text-3:var(--order-banner-text-3);
-  --color-order-banner-text-4:var(--order-banner-text-4);
-  --color-order-infos-text:var(--order-infos-text);
-  --color-order-info-border:var(--order-info-border);
-  --color-deals-offer-text:var(--deals-offer-text);
-  --color-deals-offer-text-2:var(--deals-offer-text-2);
-  --color-deals-offer-text-3:var(--deals-offer-text-3);
-  --color-border-brands:var(--border-brands);
- 
-  
-  --color-text-everyday: var(--text-everyday);
-  --color-border-seller-dashed: var(--border-seller-dashed);
-  --color-bg-seller-seasonal-wear-badge: var(--bg-seller-seasonal-wear-badge);
-  --color-order-banner-text: var(--order-banner-text);
-  --color-order-banner-text-2: var(--order-banner-text-2);
-  --color-order-banner-text-3: var(--order-banner-text-3);
-  --color-order-banner-text-4: var(--order-banner-text-4);
-  --color-order-infos-text: var(--order-infos-text);
-  --color-order-info-border: var(--order-info-border);
-  --color-deals-offer-text: var(--deals-offer-text);
-  --color-deals-offer-text-2: var(--deals-offer-text-2);
-  --color-deals-offer-text-3: var(--deals-offer-text-3);
-  --color-border-on-the-way:var(--border-on-the-way);
-  --color-border-on-the-way-2:var(--border-on-the-way-2);
-  --color-text-contact-us:vat(--text-contact-us);
-  --color-contact-card-bg:var(--contact-card-bg);
-  --color-contact-card-border:var(--contact-card-border);
-
-
-  /* vendor dashboard */
-  --color-vendor-base: var(--text-vendor-base);
-  --color-vendor-warning: var(--text-vendor-warning);
-  --color-vendor-danger: var(--text-vendor-danger);
-  --color-vendor-info: var(--text-vendor-info);
-  --color-vendor-success: var(--text-vendor-success);
-  --color-vendor-sidebar: var(--text-vendor-sidebar);
-  --color-vendor-lucide: var(--text-vendor-lucide);
-  --color-border-vendor-avatar: var(--border-vendor-avatar);
-  --color-avatar-heading: var(--text-avatar-heading);
-  --color-sidebar-divider: var(--border-sidebar-divider);
-  --color-vendor-card-info: var(--text-vendor-card-info);
-  --color-invoice-text: var(--text-invoice-text);
-  --color-invoice-date: var(--text-invoice-date);
-  --color-top-product-chip: var(--text-top-product-chip);
-  --color-border-top-product-chip: var(--border-top-product-chip);
-  --color-card-header: var(--text-card-header);
-  --color-border-vendor-card-header: var(--border-vendor-card-header);
-  --color-vendor-table-divider: var(--border-vendor-table-divider);
-  --color-vendor-section-header: var(--text-vendor-section-header);
-  --color-product-search: var(--border-product-search);
-  --color-product-active: var(--text-product-active);
-  --color-deals-catalog: var(--border-deals-catalog);
-  --color-deals-catalog-text: var(--text-deals-catalog-text);
-  --color-accordion-content: var(--text-accordion-content);
+  --form-text: #292929;
+  --dark-slate: #474747;
+  --gray-muted: #9d9d9d;
+  --otp-border: #8b8b8b;
+  --mauve-gray: #bbb6b7;
+  --silver-gray: #b1b1b1;
+  --ash-gray: #929292;
+  --light-gray: #BFBFBF;
+  --jet-gray: #303030;
+  --smoky-black: #2D2926;
+  --cool-gray: #ADADAD;
+  --almost-gray: #2B2B2B;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -260,20 +53,78 @@
   }
 } */
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+@utility container {
+  margin-inline: auto !important;
+  padding-inline: 1rem !important;
+  max-width: var(--container-max, 1320px);
 }
 
-html[dir="rtl"] {
-  direction: rtl;
-  text-align: right;
+@theme {
+  /* --font-bebas: var(--font-bebas); */
+
+  --container-max: 1320px;
+  --breakpoint-sm: 540px;
+  --breakpoint-md: 720px;
+  --breakpoint-lg: 960px;
+  --breakpoint-xl: 1140px;
+  --breakpoint-2xl: 1320px;
+
+  /*Font Declration*/
+  --text-hero: 60px;
+  --text-xxs: 10px;
+
+  /* Color for the secondary dange etc listed here */
+  --color-primary: var(--primary);
+  --color-almost-black: var(--almost-black);
+  --color-dark-gray: var(--dark-gray);
+  --color-neutral-gray: var(--neutral-gray);
+  --color-mustard-yellow: var(--mustard-yellow);
+  --color-charcoal: var(--charcoal);
+  --color-light-gray: var(--light-gray);
+  --color-medium-gray: var(--medium-gray);
+  --color-secondary: var(--secondary);
+  --color-info: var(--info);
+  --color-link: var(--link);
+  --color-graphite-gray: var(--graphite-gray);
+  --color-gunmetal-gray: var(--gunmetal-gray);
+  --color-slate-gray: var(--slate-gray);
+  --color-soft-black: var(--soft-black);
+  --color-greige: var(--greige);
+  --color-rich-black: var(--rich-black);
+  --color-off-white: var(--off-white);
+  --color-golden-yellow: var(--golden-yellow);
+  --color-coral-red: var(--coral-red);
+  --color-cool-gray: var(--cool-gray);
+  --color-dim-gray: var(--dim-gray);
+  --color-granite-gray: var(--granite-gray);
+  --color-jet2-gray: var(--jet2-gray);
+  --color-amber: var(--amber);
+
+  /* All Other Color listed here */
+  --color-form-text: var(--form-text);
+  --color-otp-border: var(--otp-border);
+  --color-gray-muted: var(--gray-muted);
+  --color-dark-slate: var(--dark-slate);
+  --color-mauve-gray: var(--mauve-gray);
+  --color-silver-gray: var(--silver-gray);
+  --color-ash-gray: var(--ash-gray);
+  --color-light-gray: var(--light-gray);
+  --color-jet-gray: var(--jet-gray);
+  --color-smoky-black: var(--smoky-black);
+  --color-cool-gray: var(--cool-gray);
+  --color-almost-gray: var(--almost-gray);
 }
 
-html[dir="ltr"] {
-  direction: ltr;
-  text-align: left;
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+} */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -284,109 +135,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.inner_page_section_padding {
+  padding-block: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-} */
-
-
-.banner_slider_swipper {
-  padding: 0 !important;
-  max-height: 340px;
-  height: 100%;
-}
-
-.banner_slider_swipper .swiper-pagination {
-  position: absolute !important;
-  bottom: 10px !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  display: flex !important;
-  gap: 6px !important;
-  z-index: 10 !important;
-  width: fit-content !important;
-}
-
-.banner_slider_swipper .swiper-pagination-bullet {
-  width: 30px !important;
-  /* line length */
-  height: 2px !important;
-  /* line thickness */
-  background-color: #e3e3e3 !important;
-  border-radius: 2px !important;
-  opacity: 0.4 !important;
-  transition: all 0.3s ease !important;
-  display: block !important;
-  /* important for horizontal line */
-  border: none !important;
-}
-
-.banner_slider_swipper .swiper-pagination-bullet-active {
-  width: 60px !important;
-  background-color: #ffffff !important;
-  opacity: 1 !important;
-}
-
-.auto_slide {
-  width: auto !important;
-}
-
-.category_navigation_slider_wrapper {
-  padding-inline: 14px !important;
-}
-
-.section_padding {
-  padding-block: 28px;
-}
-
-.similar_product_bg_gradient {
-  background: linear-gradient(292.71deg, rgba(254, 168, 0, 0.6) -68.62%, rgba(254, 168, 0, 0) 45%), linear-gradient(280.94deg, rgba(254, 168, 0, 0) 57.93%, rgba(254, 168, 0, 0.25) 103.02%),
-  ;
-}
-
-.gradient-circle-border {
-  border: 1px solid;
-  border-image-source: linear-gradient(180deg, #FEA800 0%, rgba(254, 168, 0, 0) 67.39%);
-  border-image-slice: 1;
-  border-image-repeat: stretch;
-}
-
-.calendar-cut-border::after {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  border: var(--ring-thickness) solid var(--ring-color);
-  border-top-color: transparent !important;
-  transform: rotate(-95deg);
-}
-
-/* 2. Create the smooth swirl effect using ::before (optional but recommended) */
-.calendar-cut-border::before {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  border: var(--ring-thickness) solid;
-  border-color: #00398450 transparent transparent transparent;
-  transform: rotate(45deg);
-}
-
-/* Ensure the icon content is above the border */
-.calendar-cut-border>div {
-  z-index: 10;
-}
-
-.border-box {
-  border-radius: 50%;
-  transform: rotate(-7.71deg);
+.after_login_page_section_padding {
+  padding-block: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
