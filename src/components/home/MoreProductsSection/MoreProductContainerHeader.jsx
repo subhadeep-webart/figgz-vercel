@@ -5,7 +5,7 @@ import { Button, cn } from "@heroui/react";
 
 const MoreProductContainerHeader = ({ headerText }) => {
     return (<div className="w-full flex items-center justify-between">
-        <h3 className="font-bold text-base">{headerText}</h3>
+        <h3 className="font-bold text-sm md:text-base">{headerText}</h3>
         <div className="flex justify-between items-center gap-5">
             <Button
                 isIconOnly

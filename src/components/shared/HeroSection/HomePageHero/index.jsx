@@ -4,14 +4,12 @@ import HomeRightHeroSlider from "@/components/ui/Caraousel/BannerSlider/HomeRigh
 const HomePageHero = () => {
   return (
     <>
-      <div className="container">
-        <div className="grid grid-cols-12 gap-7">
-          <div className="col-span-8">
-            <HomeLeftHeroSlider />
-          </div>
-          <div className="col-span-4">
-            <HomeRightHeroSlider />
-          </div>
+      <div className="grid grid-cols-12 gap-7">
+        <div className="hidden md:block md:col-span-8">
+          <HomeLeftHeroSlider />
+        </div>
+        <div className="col-span-12 md:col-span-4">
+          <HomeRightHeroSlider />
         </div>
       </div>
     </>

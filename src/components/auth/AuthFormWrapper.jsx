@@ -1,8 +1,7 @@
 import styles from "./auth.module.css";
-const AuthFormWrapper = ({ headerText = "", children, className }) => {
+const AuthFormWrapper = ({ children }) => {
     return (
-        <div className={`${styles.auth_form_container} ${className}`}>
-            <h3>{headerText}</h3>
+        <div className={styles.auth_wrapper}>
             {children}
         </div>
     )

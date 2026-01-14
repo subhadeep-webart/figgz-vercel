@@ -3,7 +3,7 @@ import CategoryList from "./CategoryList";
 
 const ShopByCategory = () => {
     return (
-        <ProductCatalogSectionWrapper id="shop_by_category" headerText="Shop by Category" isButton={false}>
+        <ProductCatalogSectionWrapper id="shop_by_category" headerText="Shop by Category">
             <CategoryList />
         </ProductCatalogSectionWrapper>
     )

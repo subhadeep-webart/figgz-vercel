@@ -3,7 +3,7 @@ import AboutOurValuesCard from "@/components/ui/Cards/AboutOurValuesCard";
 
 const OurValues=()=>{
     return(
-        <div className="grid grid-cols-2 gap-7">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
          <AboutOurValuesCard
           icon={Icons.CustomerIcon}
           title="Customer First Approach"

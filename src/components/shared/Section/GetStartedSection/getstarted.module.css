@@ -1,8 +1,0 @@
-.get_started_container {
-    width: 100%;
-    height: 391px;
-    background-color: var(--primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}

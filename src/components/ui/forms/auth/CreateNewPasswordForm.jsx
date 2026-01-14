@@ -12,10 +12,10 @@ const CreateNewPasswordForm = () => {
   return (
     <>
       <div className={styles.login_form_container}>
-        <h1 className="text-foreground font-bold text-2xl text-center">
+        <h1 className="text-foreground font-bold text-sm md:text-2xl text-center">
           CREATE NEW PASSWORD
         </h1>
-        <p className="text-text-forgot-pass font-normal text-sm text-center">
+        <p className="text-text-forgot-pass font-normal text-xs md:text-sm text-center">
           Your new password must be different from your old one and include at
           least 8 characters, 1 number, and 1 special symbol.
         </p>
@@ -32,7 +32,7 @@ const CreateNewPasswordForm = () => {
         />
         <div className="w-full flex justify-center">
           <CustomButton
-            className="bg-primary w-2/3 text-raisin font-semibold text-sm py-4"
+            className="bg-primary w-2/3 text-raisin font-semibold text-xs md:text-sm py-4"
             clickHandler={handleUpdatePassword}
           >
             Update Password

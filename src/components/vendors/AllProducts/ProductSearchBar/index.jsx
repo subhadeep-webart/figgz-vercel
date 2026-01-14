@@ -10,7 +10,7 @@ const ProductSearchBar = () => {
                 isClearable
                 classNames={{
                     inputWrapper: "bg-transparent hover:!bg-transparent shadow-none group-data-[focus=true]:bg-transparent",
-                    innerWrapper: "!pr-2 !pl-4"
+                    innerWrapper: "!px-4",
                 }}
                 startContent={
                     <Icons.Search className="text-black !px-2" size={32} />

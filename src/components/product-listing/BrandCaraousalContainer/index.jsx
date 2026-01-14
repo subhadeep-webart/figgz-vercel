@@ -5,7 +5,7 @@ const BrandCaraousalContainer = () => {
     return (
         <section className="w-full">
             <MoreProductContainerHeader headerText={"Shop By Brand"} />
-            <div className="grid grid-cols-6 gap-7 !pb-12 !pt-3.5">
+            <div className="grid grid-cols-4 lg:grid-cols-6 gap-4 lg:gap-7 !pb-12 !pt-3.5">
             <BrandsCard/>
             <BrandsCard/>
             <BrandsCard/>

@@ -1,20 +1,20 @@
-// import SellerProfileBannerSection from "@/components/sellerprofile/SellerProfileBannerSection/index";
-// import BestDealsSection from "@/components/sellerprofile/BestDealsSection/index";
-// import CollectionSection from "@/components/sellerprofile/CollectionSection/index";
-// import EverydayStyleSection from "@/components/sellerprofile/EverydayStyleSection/index";
-// import HotPicksSection from "@/components/sellerprofile/HotPicksSection/index";
-// import MoreProductSection from "@/components/sellerprofile/MoreProductSection/index";
+import SellerProfileBannerSection from "@/components/sellerprofile/SellerProfileBannerSection";
+import BestDealsSection from "@/components/sellerprofile/BestDealsSection";
+import CollectionSection from "@/components/sellerprofile/CollectionSection";
+import EverydayStyleSection from "@/components/sellerprofile/EverydayStyleSection";
+import HotPicksSection from "@/components/sellerprofile/HotPicksSection";
+import MoreProductSection from "@/components/sellerprofile/MoreProductSection";
 
 
-const SellerProfile = () => {
-    return (
+const SellerProfile=()=>{
+    return(
         <section className="container flex flex-col gap-16">
-            {/* <SellerProfileBannerSection />
-            <HotPicksSection />
-            <EverydayStyleSection />
-            <CollectionSection />
-            <BestDealsSection />
-            <MoreProductSection /> */}
+        <SellerProfileBannerSection/>
+        <HotPicksSection/>
+        <EverydayStyleSection/>
+        <CollectionSection/>
+        <BestDealsSection/>
+        <MoreProductSection/>
         </section>
     )
 };

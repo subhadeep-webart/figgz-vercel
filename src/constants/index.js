@@ -188,68 +188,62 @@ export const VENDOR_SIDEBAR_MENU = [
         name: "Dashboard",
         Icon: Icons.LayoutDashboard,
         iconProps: { className: "text-vendor-lucide", size: 18 },
-        href: "/personal-info",
+        href: "/en/vendor",
     },
     {
         name: "Product",
         Icon: Icons.ListCheck,
         iconProps: { className: "text-vendor-lucide", size: 18 },
-        href: "/order-history",
+        href: "/en/vendor/all-products",
     },
     {
         name: "Orders",
         Icon: Icons.Box,
         iconProps: { className: "text-vendor-lucide", size: 18 },
-        href: "/order-history",
+        href: "/en/vendor/orders",
     },
     {
         name: "Reviews",
         Icon: Icons.File,
         iconProps: { className: "text-vendor-lucide", size: 18 },
-        href: "/order-history",
+        href: "/en/vendor/reviews",
     },
     {
-        name: "Earnigs",
+        name: "Earnings",
         Icon: Icons.BadgeDollarSign,
         iconProps: { className: "text-vendor-lucide", size: 18 },
-        href: "/order-history",
+        href: "/en/vendor/earning",
     },
     {
         name: "Cupon Code",
         Icon: Icons.TicketCheck,
         iconProps: { className: "text-vendor-lucide", size: 18 },
-        href: "/order-history",
+        href: "/en/vendor/coupon",
     },
     {
         name: "Reward",
         Icon: Icons.Medal,
         iconProps: { className: "text-vendor-lucide", size: 18 },
-        href: "/order-history",
+        href: "/en/vendor/reward",
     },
     {
         name: "Shipping",
         Icon: Icons.Truck,
         iconProps: { className: "text-vendor-lucide", size: 18 },
-        href: "/order-history",
+        href: "/en/vendor/#",
     },
     {
         name: "Announcements",
         Icon: Icons.Megaphone,
         iconProps: { className: "text-vendor-lucide", size: 18 },
-        href: "/order-history",
+        href: "/en/vendor/announcements",
     },
     {
         name: "Returns",
         Icon: Icons.Undo2,
         iconProps: { className: "text-vendor-lucide", size: 18 },
-        href: "/order-history",
+        href: "/en/vendor/returns",
     },
-    // {
-    //     name: "Product",
-    //     Icon: Icons.ClockFading,
-    //     iconProps: { className: "text-vendor-lucide", size: 18 },
-    //     href: "/order-history",
-    // },
 ]
 
 export const ORDER_CONFIRMED_HISTORY_TABLE_HEADER = [
@@ -269,4 +263,24 @@ export const ORDER_CONFIRMED_HISTORY_TABLE_HEADER = [
         headerName: " ",
     },
 ]
+
+export const PROFILE_DROPDOWN_MENU = [{
+    name: "Upload Product",
+    href: "#",
+    key: "upload_product",
+    color: "#505050"
+},
+{
+    name: "Orders",
+    href: "#",
+    key: "orders",
+    color: "#505050"
+},
+{
+    name: "Settings",
+    href: "#",
+    key: "settings",
+    color: "#ffa310"
+}]
+
 

@@ -13,7 +13,7 @@ const LanguageSelect = () => {
             variant="underlined"
             classNames={{
                 trigger:
-                    "min-h-[36px] h-[36px] w-14 bg-white shadow-none hover:!bg-white data-[hover=true]:bg-white",
+                    "min-h-[36px] h-[36px] w-14 bg-transparent shadow-none hover:!bg-transparent data-[hover=true]:bg-transparent",
                 label: "text-black font-semibold text-sm !pb-1",
                 listbox: "!px-2 !py-2 bg-transparent",
             }}

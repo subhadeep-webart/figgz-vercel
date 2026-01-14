@@ -10,10 +10,10 @@ const ProductListing = () => {
             <BrandCaraousalContainer/>
    
             <div className="w-full flex justify-start items-start gap-7">
-                <div className="w-1/4">
+                <div className="w-1/4 hidden lg:block">
                     <ProductFilter />
                 </div>
-                <div className="w-3/4">
+                <div className="lg:w-3/4 w-full">
                     <ProductContainer />
                 </div>
             </div>

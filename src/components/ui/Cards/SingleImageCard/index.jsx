@@ -16,14 +16,14 @@ const SingleImageCard = ({
         <Link
             href={href}
             className={cn(
-                "h-44 w-48 space-y-3 flex justify-center items-center border-1 border-image-wrapper rounded-3xl",
+                "h-44 md:w-48 w-40 space-y-3 flex justify-center items-center border-1 border-image-wrapper rounded-3xl",
                 className
             )}
         >
             <ImageWrapper
-                className={cn("h-40 w-40 rounded-3xl border-none", imageWrapperClass)}
+                className={cn("h-40 md:w-40 w-36 rounded-3xl border-none", imageWrapperClass)}
             >
-                <div className={cn("w-40 h-40 relative", imageClass)}>
+                <div className={cn("md:w-40 w-36 h-40 relative", imageClass)}>
                     <Image
                         src={src}
                         alt={alt}

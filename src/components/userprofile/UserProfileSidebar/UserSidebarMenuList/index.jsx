@@ -3,7 +3,9 @@ import { USER_SIDEBAR_MENU } from "@/constants";
 import UserSidebarMenu from "../UserSidebarMenu";
 import { Divider } from "@heroui/react";
 import { Fragment } from "react";
-import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { Icons } from "@/assets";
+import CustomButton from "@/components/ui/Buttons/CustomButton";
 
 const UserSidebarMenuList = () => {
     return (
@@ -17,6 +19,9 @@ const UserSidebarMenuList = () => {
                     )}
                 </Fragment>
             ))}
+
+            <Link href="#" className="flex justify-center gap-1.5 font-normal text-xl text-raisin !py-10"><Icons.LogOut/>Log Out</Link>
+            <CustomButton className="text-lg text-raisin !px-16 !py-6 border border-raisin bg-transparent">Explore Brand Deals</CustomButton>
         </div>
     )
 }

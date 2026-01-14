@@ -19,7 +19,7 @@ const BannerSection = ({
   return (
     <section
       className={cn(
-        "relative w-full h-[504px] flex items-end justify-start rounded-4xl",
+        "relative w-full h-[231px] md:h-[504px] flex items-end justify-start rounded-4xl",
         className
       )}
       style={{
@@ -34,8 +34,8 @@ const BannerSection = ({
             ></div> */}
 
       {showAbout && (
-        <div className="relative z-10 text-center !ml-20 !mb-20">
-          <h1 className="text-white text-4xl font-bold mb-2">{title}</h1>
+        <div className="relative z-10 text-center !ml-5 !mb-5 md:!ml-20 md:!mb-20">
+          <h1 className="text-white text-xl md:text-4xl font-bold mb-2">{title}</h1>
         </div>
       )}
 

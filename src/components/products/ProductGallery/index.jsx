@@ -10,12 +10,16 @@ import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+import ProductDescription from '../ProuctDetails/ProductDescription';
 
 export default function ProductGallery() {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
     return (
-        <div className="w-1/4 h-full flex flex-col gap-4">
+        <div className="lg:w-1/4 w-full h-full flex flex-col gap-4">
+            <div className='lg:hidden'>
+             <ProductDescription />
+             </div>
             <Swiper
                 navigation={true}
                 thumbs={{ swiper: thumbsSwiper }}

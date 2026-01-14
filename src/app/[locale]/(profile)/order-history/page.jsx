@@ -1,10 +1,11 @@
-import OrderHistoryCard from "@/components/ui/Cards/OrderHistoryCard";
+
+import UserOrderHistorySection from "@/components/userprofile/UserOrderHistorySection";
 
 
 const OrderHistoryPage = () => {
     return (
         <section className="w-full">
-          <OrderHistoryCard/>
+          <UserOrderHistorySection/>
         </section>
     )
 }

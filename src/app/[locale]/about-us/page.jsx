@@ -6,7 +6,7 @@ import WhatWeOfferSection from "@/components/about/WhatWeOfferSection";
 
 const AboutUs = () => {
   return (
-    <section className="container flex flex-col gap-28">
+    <section className="container flex flex-col gap-8 md:gap-28">
       <AboutBannerSection />
       <WelcomeToFiggzSection />
       <WhatWeOfferSection />

@@ -9,7 +9,7 @@ const SimilarProduct = () => {
         const swiperRef = useRef(null);
 
   return (
-    <aside className="w-[1/4] flex flex-col gap-3 h-full">
+    <aside className="w-[1/4] lg:flex flex-col gap-3 h-full hidden">
       <SimilarProductSlider prevRef={prevRef} nextRef={nextRef} swiperRef={swiperRef}/>
       <div className="flex flex-col gap-9">
         <SimilarProductCard />

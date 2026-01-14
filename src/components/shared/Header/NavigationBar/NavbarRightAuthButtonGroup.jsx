@@ -11,16 +11,16 @@ const NavbarRightAuthButtonGroup = () => {
     router.push("/en/sign-up");
   };
   return (
-    <div className="flex items-center gap-4">
+    <div className="hidden sm:flex items-center gap-1 lg:gap-4">
       <CustomButton
-        className="bg-transparent text-secondary font-semibold text-sm"
+        className="bg-transparent text-secondary font-semibold text-[10px] lg:text-sm"
         variant="light"
         clickHandler={handleLogin}
       >
         Log In
       </CustomButton>
       <CustomButton
-        className="bg-transparent text-secondary font-semibold text-sm border-secondary border-1"
+        className="bg-transparent text-secondary font-semibold text-[10px] lg:text-sm border-secondary border-1 !px-2 lg:!px-4"
         variant="bordered"
         clickHandler={handleSignup}
       >

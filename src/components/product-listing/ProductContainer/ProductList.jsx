@@ -5,7 +5,7 @@ import ProductDetailsContainer from "./ProductDetailsContainer";
 const ProductList = () => {
   return (
     <>
-      <div className="grid grid-cols-3 gap-7">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-7">
         <ProductCard className="max-w-80">
           <ProductCardImageContainer />
           <ProductDetailsContainer />

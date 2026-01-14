@@ -51,7 +51,7 @@ const FaqAccordion = () => {
                 content: "!py-4 !px-9 bg-shopping-cart !my-1 text-base !text-text-info !font-normal rounded-[20px]"
             }}
         >
-            <AccordionItem key="1" aria-label="Accordion 1" title="Accordion 1"
+            <AccordionItem key="1" aria-label="Accordion 1" title="Gorem ipsum dolor sit amet, consectetuing elit."
                 indicator={({ isOpen }) => (isOpen ? <ChevronUp color="#ffffff" /> : <ChevronDown color="#4B4B4B" />)}
             >
                 {defaultContent}

@@ -25,13 +25,13 @@ const ProductCatalogSectionWrapper = ({
             className={
               headerClassName
                 ? headerClassName
-                : "text-base font-bold text-foreground"
+                : "text-sm md:text-base font-bold text-foreground"
             }
           >
             {headerText}
           </h3>
           {showSubText && (
-            <h4 className="font-medium text-base text-text-payment-info">
+            <h4 className="font-medium text-xs md:text-base text-text-payment-info">
               {subText}
             </h4>
           )}

@@ -1,15 +1,23 @@
+import CountSection from "./CountSection";
+import StartShopping from "./StartShopping";
 import StartShoppingSection from "./StartShoppingSection";
 import WelcomeSection from "./WelcomeSection";
 
 const WelcomeToFiggzSection = () => {
   return (
-    <section className="max-h-[585px] h-full">
-      <div className="grid grid-cols-12 gap-11">
+    <section className="md:max-h-[585px] h-full">
+      <div className="md:hidden flex flex-col gap-8 container">
+        {" "}
+        <CountSection className="self-end " />
+        <WelcomeSection />
+        <StartShopping />
+      </div>
+      <div className="md:grid grid-cols-12 gap-11 hidden">
         <div className="col-span-4">
-            <WelcomeSection/>
+          <WelcomeSection />
         </div>
         <div className="col-span-8">
-            <StartShoppingSection/>
+          <StartShoppingSection />
         </div>
       </div>
     </section>

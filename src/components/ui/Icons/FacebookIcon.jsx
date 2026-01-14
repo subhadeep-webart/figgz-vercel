@@ -1,17 +1,28 @@
 import * as React from "react";
-const FacebookIcon = (props) => (
-  <svg
-    width={12}
-    height={21}
-    viewBox="0 0 12 21"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    {...props}
-  >
-    <path
-      d="M7.28024 20.8068V11.3166H10.5855L11.0814 7.61693H7.28024V5.25526C7.28024 4.18446 7.58763 3.45473 9.18335 3.45473L11.2152 3.45393V0.144847C10.8638 0.100856 9.65766 0 8.25379 0C5.32229 0 3.31533 1.72381 3.31533 4.88885V7.61693H0V11.3166H3.31533V20.8068H7.28024Z"
-      fill="white"
-    />
-  </svg>
-);
+const FacebookIcon = ({
+  fill = "#000000",
+  size = 20,
+  width,
+  height,
+  ...props
+}) => {
+  const finalWidth = width || size;
+  const finalHeight = height || size;
+
+  return (
+    <svg
+      {...props}
+      width={finalWidth}
+      height={finalHeight}
+      viewBox="0 0 16 16"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+    >
+      <path
+        fill={fill}
+        d="M7.2 16v-7.5h-2v-2.7h2c0 0 0-1.1 0-2.3 0-1.8 1.2-3.5 3.9-3.5 1.1 0 1.9 0.1 1.9 0.1l-0.1 2.5c0 0-0.8 0-1.7 0-1 0-1.1 0.4-1.1 1.2 0 0.6 0-1.3 0 2h2.9l-0.1 2.7h-2.8v7.5h-2.9z"
+      />
+    </svg>
+  );
+};
 export default FacebookIcon;

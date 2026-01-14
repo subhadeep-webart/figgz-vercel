@@ -4,7 +4,7 @@ import MoreProductList from "./MoreProductList";
 
 const MoreProductSection = () => {
     return (
-        <section className="w-full grid grid-cols-3 gap-7 container">
+        <section className="w-full grid grid-cols-1 md:grid-cols-3 gap-7 container">
            <MoreProductList/>
            <DealProductList/>
            <InFocusProductList/>

@@ -4,13 +4,16 @@ import styles from "../header.module.css";
 import DeliverToSelect from "../../Select/DeliverToSelect";
 import LanguageSelect from "../../Select/LanguageSelect";
 import Link from "next/link";
-import LinkButton from "@/components/ui/Buttons/LinkButton";
+import CategoryDrawer from "@/components/ui/DrawerComponent/CategoryDrawer";
 
 const NavbarLeftContainer = () => {
     return (
         <div className={styles.navbar_left}>
-            <Link href="/en" className="inline-block">
-                <div className="relative w-[142px] h-[52px]">
+            <div className="lg:hidden">
+            <CategoryDrawer />
+            </div>
+            <Link href="/en" className="lg:inline-block">
+                <div className="relative w-[100px] h-[30px] lg:w-[142px] lg:h-[52px]">
                     <Image
                         src={PUBLIC_IMAGES.Logo}
                         alt="Figgz Logo"
@@ -19,8 +22,12 @@ const NavbarLeftContainer = () => {
                     />
                 </div>
             </Link>
+            <div className="hidden md:block">
             <DeliverToSelect />
+            </div>
+            <div className="hidden md:block">
             <LanguageSelect />
+            </div>
         </div>
     )
 }

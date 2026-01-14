@@ -17,8 +17,8 @@ const SignUpForm = () => {
   return (
     <>
       <div className={styles.signup_form_container}>
-        <h1 className="text-foreground font-bold text-xl">BECOME A MEMBER</h1>
-        <div className="grid grid-cols-2 gap-4 w-full">
+        <h1 className="text-foreground font-bold text-sm md:text-xl flex items-center md:items-start">BECOME A MEMBER</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
           <InputField
             label="First name"
             placeholder="Enter first name"
@@ -47,12 +47,12 @@ const SignUpForm = () => {
           />
         </div>
         <CustomButton
-          className="bg-primary w-1/2 text-raisin font-semibold text-sm py-4"
+          className="bg-primary w-1/2 text-raisin font-semibold text-xs md:text-sm py-4"
           clickHandler={handleRegister}
         >
           Register
         </CustomButton>
-        <h2 className="font-normal text-base">
+        <h2 className="font-normal text-sm md:text-base">
           Don&apos;t have an account?{" "}
           <Link href="/en/login" className="font-bold text-info">
             Login
@@ -60,7 +60,7 @@ const SignUpForm = () => {
         </h2>
 
         <div className="flex items-center gap-4">
-          <p className=" font-bold text-lg text-[#000000]">OR</p>
+          <p className=" font-bold text-sm md:text-lg text-[#000000]">OR</p>
           <div className="flex  items-center">
             <Icons.GoogleIcon />
             <p className="text-foreground font-normal text-sm">

@@ -22,7 +22,7 @@ const QuantityIncDscButton = ({ className = "" }) => {
             >
                 <Icons.Minus className="w-4 h-4" />
             </Button>
-            <span className="w-6 text-center text-sm font-medium">{count}</span>
+            <span className="w-6 text-center text-xs lg:text-sm font-medium">{count}</span>
             <Button
                 isIconOnly
                 variant="light"

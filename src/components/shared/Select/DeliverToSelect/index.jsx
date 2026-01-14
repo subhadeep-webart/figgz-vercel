@@ -13,9 +13,9 @@ const DeliverToSelect = () => {
             variant="underlined"
             classNames={{
                 trigger:
-                    "min-h-[36px] h-[36px] w-28 bg-white shadow-none hover:!bg-white data-[hover=true]:bg-white",
+                    "min-h-[36px] h-[36px] w-full md:w-28 bg-transparent shadow-none hover:!bg-transparent data-[hover=true]:bg-transparent",
                 label: "text-black font-semibold text-sm !pb-1",
-                listbox: "!p-2 bg-transparent w-28",
+                listbox: "!p-2 bg-transparent w-full md:w-28",
             }}
             renderValue={(items) => {
                 return items.map((item) => (<SelectCountryDisplay key={item.data.key} icon={item.data.flag} text={item.data.label} />))

@@ -5,9 +5,9 @@ import Link from "next/link";
 
 const ColorCheckboxImagePreview = () => {
     return (
-        <Link href={"#"} className="h-24 w-28 space-y-3 flex justify-center items-center border-1 border-image-wrapper rounded-3xl">
-            <ImageWrapper className={"h-24 w-24 rounded-3xl border-none"}>
-                <div className="w-24 h-20 relative">
+        <Link href={"#"} className="lg:h-24 h-16 w-20 lg:w-28 space-y-3 flex justify-center items-center border-1 border-image-wrapper rounded-3xl">
+            <ImageWrapper className={"h-16 w-16 lg:h-24 lg:w-24 rounded-3xl border-none"}>
+                <div className="h-14 w-16 lg:w-24 lg:h-20 relative">
                     <Image src={PUBLIC_IMAGES.ColorBox} alt="Color 1 image" fill className="w-full h-full object-contain" />
                 </div>
             </ImageWrapper>

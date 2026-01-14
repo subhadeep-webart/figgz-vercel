@@ -7,7 +7,7 @@ import Link from "next/link";
 const TopProductContainer = () => {
     return (
         <VendorDashboardTableWrapper className={"!px-6"}>
-            <VendorCardHeaderWrapper headerText="Top Products" className="border-l-3 border-border-vendor-card-header">
+            <VendorCardHeaderWrapper headerText="Top Products" className="border-l-3 border-border-vendor-card-header !mb-4  !pl-3">
                 <Link href={"#"} className="text-card-header font-medium text-xs">
                     View All
                 </Link>
@@ -17,7 +17,10 @@ const TopProductContainer = () => {
                     <TopProductCard />
                     <Divider className="my-2 border-vendor-table-divider"/>
                 </>
-                <TopProductCard />
+                 <>
+                    <TopProductCard />
+                    <Divider className="my-2 border-vendor-table-divider"/>
+                </>
                 <TopProductCard />
             </div>
         </VendorDashboardTableWrapper>

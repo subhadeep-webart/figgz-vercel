@@ -9,6 +9,8 @@ const FaqAccordionContainer=()=>{
             <FaqAccordion/>
             <FaqAccordion/>
             <FaqAccordion/>
+            <FaqAccordion/>
+            <FaqAccordion/>
         </div>
     )
 }

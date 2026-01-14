@@ -6,10 +6,11 @@ import { useState } from "react";
 
 const InputField = ({
   placement = "outside-top",
-  type = "",
+  type = "text",
   label = "",
   placeholder = "",
-  classNames = {}
+  classNames = {},
+  endContent,
 }) => {
   const [showPassword, setShowPassword] = useState(false);
   const isPassword = type === "password";
@@ -17,40 +18,32 @@ const InputField = ({
   const defaultClassNames = {
     label: [
       "font-semibold",
-      "text-base",
-      "text-black",
+      "text-sm",
+      "text-[#000000]",
       "mb-2",
     ],
-
     inputWrapper: [
-      "bg-transparent",
-      "hover:bg-transparent",
-      "focus:bg-transparent",
-      "active:bg-transparent",
-
-      "data-[hover=true]:bg-transparent",
-      "data-[focus=true]:bg-transparent",
+      "bg-white",
+      "hover:bg-white",
+      "focus:bg-white",
+      "active:bg-white",
+      "data-[hover=true]:bg-white",
+      "data-[focus=true]:bg-white",
       "data-[focus-visible=true]:shadow-none",
-      "data-[pressed=true]:bg-transparent",
-
-      "data-[filled=true]:bg-transparent",
-      "data-[filled=true]:data-[hover=true]:bg-transparent",
-      "data-[filled=true]:data-[focus=true]:bg-transparent",
-
-      "!shadow-none",
+      "data-[pressed=true]:bg-white",
+      "data-[filled=true]:bg-white",
       "border-0",
       "border-b",
-      "border-secondary",
+      "border-[#C3C3C3]",
       "rounded-none",
       "px-0",
+      "!shadow-none",
     ],
-
     input: [
-      "text-black",
+      "text-base",
       "font-normal",
-      "placeholder:text-info",
-      "placeholder:font-normal",
-      "placeholder:text-base",
+      "placeholder:text-[#919191]",
+      "placeholder:text-[15px]",
     ],
   };
 
@@ -60,6 +53,22 @@ const InputField = ({
     input: cn(defaultClassNames.input, classNames.input),
   };
 
+  const resolvedEndContent = isPassword ? (
+    <button
+      type="button"
+      onClick={() => setShowPassword(!showPassword)}
+      className="focus:outline-none"
+    >
+      {showPassword ? (
+        <Icons.EyeOff className="text-[#222222]" size={18} />
+      ) : (
+        <Icons.Eye className="text-[#222222]" size={18} />
+      )}
+    </button>
+  ) : (
+    endContent
+  );
+
   return (
     <Input
       key={placement}
@@ -68,21 +77,7 @@ const InputField = ({
       type={isPassword && showPassword ? "text" : type}
       placeholder={placeholder}
       classNames={mergedClassNames}
-      endContent={
-        isPassword && (
-          <button
-            type="button"
-            onClick={() => setShowPassword(!showPassword)}
-            className="focus:outline-none"
-          >
-            {showPassword ? (
-              <Icons.EyeOff className="text-[#222222]" size={18} />
-            ) : (
-              <Icons.Eye className="text-[#222222]" size={18} />
-            )}
-          </button>
-        )
-      }
+      endContent={resolvedEndContent}
     />
   );
 };

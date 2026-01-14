@@ -12,8 +12,8 @@ const MoreProductCard = () => {
                 </div>
             </ImageWrapper>
             <div className="flex flex-col">
-                <p className="text-foreground font-semibold text-base">Home & Kitchen</p>
-                <p className="text-product-text-secondary font-normal text-sm">Our exclusive product</p>
+                <p className="text-foreground font-semibold text-sm md:text-base">Home & Kitchen</p>
+                <p className="text-product-text-secondary font-normal text-xs md:text-sm">Our exclusive product</p>
             </div>
         </ProductCard>
     )

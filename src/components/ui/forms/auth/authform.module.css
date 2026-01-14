@@ -16,3 +16,10 @@
     align-items: start;
     gap: 40px;
 }
+
+@media (max-width: 480px) {
+  .signup_form_container,.login_form_container {
+    max-width: 288px;
+     align-items: center;
+  }
+}
