@@ -8,7 +8,7 @@ import WishlistModifier from "./WishlistModifier";
 
 const WishlistCard = () => {
     return (
-        <div className="w-full max-h-60 h-full !px-8 !py-7 border-1 border-image-wrapper bg-shopping-cart rounded-2xl flex gap-5">
+        <div className="w-full md:max-h-60 h-full !px-8 !py-7 border-1 border-image-wrapper bg-shopping-cart rounded-2xl flex flex-col md:flex-row gap-5">
             <ProductImage />
             <div className="w-full">
                 <ProductDetails />

@@ -70,7 +70,7 @@ const CustomSelect = (
     // </Dropdown>
     <Select
       items={SIZE_CHART}
-      className="w-[184px]"
+      className="md:w-[184px] w-[100px]"
       defaultSelectedKeys={["Newest"]}
       classNames={{
         trigger:

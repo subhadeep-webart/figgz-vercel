@@ -5,7 +5,7 @@ import CartSelect from "@/components/shared/Select/CartSelect";
 const ProductModifierContainer = () => {
     return (
         <div className="w-full flex justify-between items-start">
-            <div className="flex gap-4">
+            <div className="flex flex-col lg:flex-row gap-4">
                 <CartSelect />
                 <QuantityIncDscButton className="bg-white" />
             </div>

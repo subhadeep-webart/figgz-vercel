@@ -13,7 +13,7 @@ const CartSelect = () => {
     return (
         <Select
             items={SIZE_CHART}
-            className="w-32"
+            className="lg:w-32 w-full"
             defaultSelectedKeys={["44"]}
             classNames={{
                 trigger:

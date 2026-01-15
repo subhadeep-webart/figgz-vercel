@@ -4,7 +4,7 @@ import InformationCard from "./InformationCard";
 
 const InformationSection = () => {
   return (
-    <div className="grid grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
       <InformationCard
         icon={Icons.WorldIcon}
         iconColor="#F48B22"

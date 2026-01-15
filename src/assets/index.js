@@ -1,4 +1,4 @@
-import { Eye, Star, EyeOff, Heart, Bell, Search, ChevronLeft, ChevronRight, RotateCw, Menu, ChevronDown, LogOut, Minus, Plus, X, UserRound, ClockFading, LayoutDashboard, ListCheck, Box, File, TicketCheck, Medal, Truck, Megaphone, Undo2, Pen, BadgeDollarSign, CalendarCheck, Ellipsis, Phone, ArrowDown, Wallet, ArrowUp, Download, UploadCloud, CircleChevronRight, ChartNoAxesGantt } from "lucide-react";
+import { Eye, Star, EyeOff, Heart, Bell, Search, ChevronLeft, ChevronRight, RotateCw, Menu, ChevronDown, LogOut, Minus, Plus, X, UserRound, ClockFading, LayoutDashboard, ListCheck, Box, File, TicketCheck, Medal, Truck, Megaphone, Undo2, Pen, BadgeDollarSign, CalendarCheck, Ellipsis, Phone, ArrowDown, Wallet, ArrowUp, Download, UploadCloud, CircleChevronRight, ChartNoAxesGantt, CircleEllipsis } from "lucide-react";
 import { CartIcon } from "@/components/ui/Icons/CartIcon";
 import { GoogleIcon } from "@/components/ui/Icons/GoogleIcon";
 import { MailIcon } from "@/components/ui/Icons/MailIcon";
@@ -166,6 +166,7 @@ export const Icons = {
   Download,
   UploadCloud,
   CircleChevronRight ,
-  ChartNoAxesGantt
+  ChartNoAxesGantt,
+  CircleEllipsis
 };
 

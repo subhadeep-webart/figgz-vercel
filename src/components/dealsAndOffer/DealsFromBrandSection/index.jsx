@@ -1,8 +1,10 @@
 "use client"
+
 import ProductCatalogSectionWrapper from "@/components/shared/Wrapper/ProductCatalogSectionWrapper";
 import CategorySlider from "@/components/ui/Caraousel/CategorySlider";
 import DealsFromBrandCard from "@/components/ui/Cards/DealsFromBrandCard";
 import { WOMENS_FASHION } from "@/constants";
+
 
 const DealsFromBrandSection = () => {
     return (

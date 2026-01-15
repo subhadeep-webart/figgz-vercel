@@ -4,11 +4,12 @@ import ProductCardImageContainer from "@/components/ui/Cards/ProductCard/Product
 import ProductInfoContainer from "@/components/ui/Cards/ProductCard/ProductInfoContainer";
 import ProductPurchaseButton from "@/components/ui/Cards/ProductCard/ProductPurchaseButton";
 
+
 const NewArrivalSection = () => {
   return (
     <div className="!mb-20">
       <ProductCatalogSectionWrapper id="new_arrival" headerText="New Arrivals">
-        <div className="grid grid-cols-6 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-6 gap-6">
         {Array.from({ length: 18 }).map((_, index) => (
             <ProductCard key={index} className={"h-full"}>
               <ProductCardImageContainer />

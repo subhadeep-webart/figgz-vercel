@@ -5,7 +5,9 @@ const WishlistModifier = () => {
     return (
         <div className="flex justify-between items-start">
             <ProductModifierContainer />
+            <div className="hidden lg:block">
             <AddToBagButton />
+            </div>
         </div>
     )
 }

@@ -6,7 +6,7 @@ import CartPaymentInfoWrapper from "../../Wrapper/CartPaymentInfoWrapper";
 const CartPaymentInfo = () => {
     return (
         <CartPaymentInfoWrapper>
-            <p className="text-product-text-base font-semibold text-lg">Payment Info</p>
+            <p className="text-product-text-base font-semibold text-sm lg:text-lg">Payment Info</p>
             <div className="flex flex-col gap-2.5 mb-2">
                 <PricingDisplay />
                 <PricingDisplay labelText="Discount" amount="$ 1.00" />

@@ -11,7 +11,7 @@ const QuantityIncDscButton = ({ className = "" }) => {
     const increase = () => setCount(prev => prev + 1);
 
     return (
-        <div className={cn("flex items-center justify-center gap-2 border border-image-wrapper rounded-full px-3 py-1 max-w-32 w-full min-h-10 h-10", className)}>
+        <div className={cn("flex items-center justify-center gap-2 border border-image-wrapper rounded-full px-3 py-1 lg:max-w-32 w-full min-h-10 h-10", className)}>
             <Button
                 isIconOnly
                 variant="light"

@@ -7,7 +7,9 @@ const ProductDetails = () => {
             <div className="max-w-[484px] w-full">
                 <CartProductInformation />
             </div>
+            <div className="hidden lg:block">
             <RemoveFormCartButton />
+            </div>
         </div>
     )
 }

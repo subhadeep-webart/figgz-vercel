@@ -39,13 +39,13 @@ const SizeChartModal = () => {
         hideCloseButton={true}
         scrollBehavior="inside"
       >
-        <ModalContent className="!py-11 !px-20">
-          <ModalHeader className="relative text-xl font-medium text-product-text-base !mb-8">
+        <ModalContent className="lg:!py-11 lg:!px-20 !py-2 !px-3">
+          <ModalHeader className="relative text-xl font-medium text-product-text-base lg:!mb-8">
             <div className="w-full flex justify-start items-start gap-6">
               <SingleImageCard
-                className={"h-36 w-28 bg-white"}
-                imageWrapperClass={"h-28"}
-                imageClass={"h-28"}
+                className={"h-24 lg:h-36 w-28 bg-white"}
+                imageWrapperClass={"h-24 lg:h-28 w-24"}
+                imageClass={"h-24 lg:h-28 w-24"}
               />
               <div className="w-full flex flex-col items-start gap-3.5 !mb-10">
                 <CartProductInformation />
@@ -53,31 +53,31 @@ const SizeChartModal = () => {
             </div>
             <button
               onClick={onClose}
-              className="absolute right-0 top-[10px] -translate-y-1/2 text-foreground hover:text-foreground font-bold"
+              className="absolute right-0 lg:top-[10px] top-1 -translate-y-1/2 text-foreground hover:text-foreground font-bold"
             >
-              <Icons.X size={24} />
+              <Icons.X className="w-3 h-3 lg:w-6 lg:h-6"/>
             </button>
           </ModalHeader>
           <ModalBody className="w-full flex flex-col gap-8">
-            <Divider />
-            <h3 className="text-3xl font-medium text-product-text-base">
+            <Divider className="hidden lg:block"/>
+            <h3 className="text-base lg:text-3xl font-medium text-product-text-base">
               Size Chart
             </h3>
             <SizeChartTable />
-            <h3 className="text-3xl font-medium text-product-text-base">
+            <h3 className="text-base lg:text-3xl font-medium text-product-text-base">
               How To Measure
             </h3>
             <img src={PUBLIC_IMAGES.MeasurementImg} className="w-[353px]" />
           </ModalBody>
-          <ModalFooter className="flex items-center justify-between !mt-6">
+          <ModalFooter className="flex flex-col lg:flex-row items-center justify-between !mt-6">
             <CustomButton
-              className="text-lg font-medium w-[319px] h-14"
+              className="text-xs lg:text-lg font-medium lg:w-[319px] w-full h-14"
               clickHandler={onClose}
             >
               <Icons.CartIcon /> Add To Cart
             </CustomButton>
             <CustomButton
-              className="text-lg font-medium w-[274px] h-14 border border-secondary bg-transparent"
+              className="text-xs lg:text-lg font-medium lg:w-[274px] w-full h-14 border border-secondary bg-transparent"
               clickHandler={onClose}
             >
               <Icons.Heart /> Wish list

@@ -46,9 +46,9 @@ const FaqAccordion = () => {
         }}
             itemClasses={{
                 base: "bg-shopping-cart shadow-none border-1 border-image-wrapper rounded-[20px] data-[open=true]:border-primary",
-                title: "text-accordion-content font-normal text-lg ",
+                title: "text-accordion-content font-normal text-sm lg:text-lg ",
                 trigger: "!px-6 !py-4 data-[open=true]:bg-primary rounded-[20px]",
-                content: "!py-4 !px-9 bg-shopping-cart !my-1 text-base !text-text-info !font-normal rounded-[20px]"
+                content: "!py-4 !px-9 bg-shopping-cart !my-1 text-xs lg:text-base !text-text-info !font-normal rounded-[20px]"
             }}
         >
             <AccordionItem key="1" aria-label="Accordion 1" title="Gorem ipsum dolor sit amet, consectetuing elit."

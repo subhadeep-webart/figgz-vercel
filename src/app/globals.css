@@ -140,6 +140,8 @@
   --steel-blue:#699CC8;
   --slate-blue:#718EBF;
   --raisin-black:#232323;
+  --dim-gray:#555555;
+  --silver-gray:#CECECE;
 }
 
 @utility container {
@@ -283,6 +285,8 @@
   --color-steel-blue:var(--steel-blue);
   --color-slate-blue:var(--slate-blue);
   --color-raisin-black:var(--raisin-black);
+  --color-dim-gray:var(--dim-gray);
+  --color-silver-gray:var(--silver-gray);
 
 }
 

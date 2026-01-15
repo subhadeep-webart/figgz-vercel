@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const AdvertisementCard = () => {
   return (
-    <div className="w-1/4 h-[430px] relative">
+    <div className="w-1/4 h-[430px] relative hidden lg:block">
       <Image
         src={PUBLIC_IMAGES.Advertisement}
         alt="Advertisement"

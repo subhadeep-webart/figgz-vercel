@@ -61,74 +61,131 @@ const SizeChartTable = () => {
   const [selected, setSelected] = useState("2");
 
   return (
-    <RadioGroup
+    // <RadioGroup
+    //   value={selected}
+    //   onValueChange={setSelected}
+    //   classNames={{ base: "gap-0" }}
+    // >
+    //   <Table
+    //     removeWrapper
+    //     classNames={{
+    //       table: "bg-transparent",
+    //       th: "bg-transparent text-slate-blue text-sm fnt-medium !py-3",
+    //       td: "text-base font-normal text-raisin-black",
+    //     }}
+    //   >
+    //     <TableHeader columns={columns} className="bg-transparent">
+    //       {(column) => (
+    //         <TableColumn key={column.key}>{column.label}</TableColumn>
+    //       )}
+    //     </TableHeader>
+
+    //     <TableBody items={rows}>
+    //       {(item) => {
+    //         const isSelected = selected === item.key;
+    //         return (
+    //           <TableRow
+    //             key={item.key}
+    //             className={`bg-transparent cursor-pointer`}
+    //             onClick={() => setSelected(item.key)}
+    //           >
+    //             <TableCell className="bg-transparent !py-3">
+    //               <Radio
+    //                 value={item.key}
+    //                 classNames={{ wrapper: "bg-transparent" }}
+    //               />
+    //             </TableCell>
+
+    //             <TableCell
+    //               className={`bg-transparent !py-3 ${
+    //                 isSelected ? "font-semibold " : ""
+    //               }`}
+    //             >
+    //               {item.size}
+    //             </TableCell>
+    //             <TableCell
+    //               className={`bg-transparent !py-3 ${
+    //                 isSelected ? "font-semibold " : ""
+    //               }`}
+    //             >
+    //               {item.chest}
+    //             </TableCell>
+    //             <TableCell
+    //               className={`bg-transparent !py-3 ${
+    //                 isSelected ? "font-semibold " : ""
+    //               }`}
+    //             >
+    //               {item.length_in}
+    //             </TableCell>
+    //             <TableCell
+    //               className={`bg-transparent !py-3 ${
+    //                 isSelected ? "font-semibold " : ""
+    //               }`}
+    //             >
+    //               {item.shoulder_in}
+    //             </TableCell>
+    //           </TableRow>
+    //         );
+    //       }}
+    //     </TableBody>
+    //   </Table>
+    // </RadioGroup>
+
+       <RadioGroup
       value={selected}
       onValueChange={setSelected}
       classNames={{ base: "gap-0" }}
     >
-      <Table
-        removeWrapper
-        classNames={{
-          table: "bg-transparent",
-          th: "bg-transparent text-slate-blue text-sm fnt-medium !py-3",
-          td: "text-base font-normal text-raisin-black",
-        }}
-      >
-        <TableHeader columns={columns} className="bg-transparent">
-          {(column) => (
-            <TableColumn key={column.key}>{column.label}</TableColumn>
-          )}
-        </TableHeader>
-
-        <TableBody items={rows}>
-          {(item) => {
-            const isSelected = selected === item.key;
-            return (
-              <TableRow
-                key={item.key}
-                className={`bg-transparent cursor-pointer`}
-                onClick={() => setSelected(item.key)}
-              >
-                <TableCell className="bg-transparent !py-3">
-                  <Radio
-                    value={item.key}
-                    classNames={{ wrapper: "bg-transparent" }}
-                  />
-                </TableCell>
-
-                <TableCell
-                  className={`bg-transparent !py-3 ${
-                    isSelected ? "font-semibold " : ""
-                  }`}
-                >
-                  {item.size}
-                </TableCell>
-                <TableCell
-                  className={`bg-transparent !py-3 ${
-                    isSelected ? "font-semibold " : ""
-                  }`}
-                >
-                  {item.chest}
-                </TableCell>
-                <TableCell
-                  className={`bg-transparent !py-3 ${
-                    isSelected ? "font-semibold " : ""
-                  }`}
-                >
-                  {item.length_in}
-                </TableCell>
-                <TableCell
-                  className={`bg-transparent !py-3 ${
-                    isSelected ? "font-semibold " : ""
-                  }`}
-                >
-                  {item.shoulder_in}
-                </TableCell>
-              </TableRow>
-            );
+     
+      <div className="w-full overflow-x-auto lg:overflow-x-visible">
+        <Table
+          removeWrapper
+          classNames={{
+            table: "bg-transparent min-w-[640px] lg:min-w-0",
+            th: "bg-transparent text-slate-blue text-sm fnt-medium !py-3",
+            td: "text-base font-normal text-raisin-black whitespace-nowrap",
           }}
-        </TableBody>
-      </Table>
+        >
+          <TableHeader columns={columns}>
+            {(column) => (
+              <TableColumn key={column.key}>
+                {column.label}
+              </TableColumn>
+            )}
+          </TableHeader>
+
+          <TableBody items={rows}>
+            {(item) => {
+              const isSelected = selected === item.key;
+
+              return (
+                <TableRow
+                  key={item.key}
+                  className="bg-transparent cursor-pointer"
+                  onClick={() => setSelected(item.key)}
+                >
+                  <TableCell className="bg-transparent !py-3">
+                    <Radio value={item.key} />
+                  </TableCell>
+
+                  <TableCell className={`!py-3 ${isSelected ? "font-semibold" : ""}`}>
+                    {item.size}
+                  </TableCell>
+                  <TableCell className={`!py-3 ${isSelected ? "font-semibold" : ""}`}>
+                    {item.chest}
+                  </TableCell>
+                  <TableCell className={`!py-3 ${isSelected ? "font-semibold" : ""}`}>
+                    {item.length_in}
+                  </TableCell>
+                  <TableCell className={`!py-3 ${isSelected ? "font-semibold" : ""}`}>
+                    {item.shoulder_in}
+                  </TableCell>
+                </TableRow>
+              );
+            }}
+          </TableBody>
+        </Table>
+      </div>
     </RadioGroup>
   );
 };

@@ -4,7 +4,7 @@ import CheckoutInformationContainer from "../CheckoutInformationContainer";
 
 const CheckoutContainer = () => {
     return (
-        <CheckoutCartWrapper>
+        <CheckoutCartWrapper >
             <CheckoutInformationContainer />
             <CheckoutRightContainer />
         </CheckoutCartWrapper>

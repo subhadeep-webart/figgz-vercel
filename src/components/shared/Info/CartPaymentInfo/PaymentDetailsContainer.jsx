@@ -4,7 +4,7 @@ import PricingDisplay from "./PricingDisplay";
 const PaymentDetailsContainer = ({ headerText = "Payment Info" }) => {
     return (
         <>
-            <p className="text-product-text-base font-semibold text-lg">{headerText}</p>
+            <p className="text-product-text-base font-semibold text-sm md:text-lg">{headerText}</p>
             <div className="flex flex-col gap-2.5 mb-2">
                 <PricingDisplay />
                 <PricingDisplay labelText="Discount" amount="$ 1.00" />

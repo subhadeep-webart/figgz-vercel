@@ -3,7 +3,7 @@ import CartSectionHeader from "../CartSectionHeader";
 
 const CartCardContainer = () => {
     return (
-        <div className="w-3/4 flex flex-col justify-start items-start gap-4">
+        <div className="lg:w-3/4 w-full flex flex-col justify-start items-start gap-4">
             <CartSectionHeader/>
             <ShoppingCartCard/>
             <ShoppingCartCard/>

@@ -1,3 +1,4 @@
+import AccordianSection from "./AccordianSection";
 import TabCard from "./TabCard";
 
 const TabSection = () => {
@@ -35,8 +36,14 @@ const TabSection = () => {
   ];
 
   return (
-    
-      <TabCard tabs={tabs} />
+    <>
+      <div className="hidden lg:block">
+        <TabCard tabs={tabs} />
+      </div>
+      <div className=" lg:hidden">
+        <AccordianSection tabs={tabs} />
+      </div>
+    </>
   );
 };
 
