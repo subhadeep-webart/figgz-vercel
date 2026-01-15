@@ -1,15 +1,17 @@
+import DealsBannerSection from "@/components/deals/DealsBannerSection";
+import DealsFromBrandSection from "@/components/deals/DealsFromBrandSection";
+import DealsNewArrivalSection from "@/components/deals/DealsNewArrivalSection";
+import ProductCatalog from "@/components/deals/ProductCatalog";
 
-import DealsAndOfferBannerSection from "../../../components/dealsandoffer/DealsAndOfferBannerSection";
-import DealsFromBrandSection from "../../../components/dealsandoffer/DealsFromBrandSection";
-import NewArrivalSection from "../../../components/dealsandoffer/NewArrivalSection";
-import ProductCatalog from "../../../components/dealsandoffer/ProductCatalog";
+
 const DealsOffer = () => {
   return (
     <section className="container flex flex-col gap-14">
-      <DealsAndOfferBannerSection />
+ 
+      <DealsBannerSection/>
       <DealsFromBrandSection />
       <ProductCatalog />
-      <NewArrivalSection />
+      <DealsNewArrivalSection />
     </section>
   );
 };
