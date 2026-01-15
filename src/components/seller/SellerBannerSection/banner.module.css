@@ -1,0 +1,27 @@
+.seller_info_box {
+    background-image: url('/images/background_images/seller-info-bg.png');
+    background-size: cover;
+    /* fills full width & height */
+    background-position: center;
+    /* centers the image */
+    background-repeat: no-repeat;
+    /* prevents tiling */
+
+    /* replace with your image path */
+    /* background-size: cover; */
+    /* background-position: center; */
+
+    /* border: 2px solid; */
+    /* border width and style required for border-image to work */
+    /* border-image-source: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    border-image-slice: 1; */
+
+    border-radius: 18px;
+    min-height: 342px;
+    height: 100%;
+    max-width: 1096px;
+    width: 100%;
+    /* optional rounded corners */
+    /* padding: 20px; */
+    /* optional inner spacing */
+}

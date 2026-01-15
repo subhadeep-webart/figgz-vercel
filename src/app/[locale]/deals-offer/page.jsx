@@ -7,7 +7,6 @@ import ProductCatalog from "@/components/deals/ProductCatalog";
 const DealsOffer = () => {
   return (
     <section className="container flex flex-col gap-14">
- 
       <DealsBannerSection/>
       <DealsFromBrandSection />
       <ProductCatalog />
