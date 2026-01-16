@@ -65,16 +65,16 @@ export const ALL_CATEGORIES = [
         category: "Trending",
         menuItems: [
             {
-                menuName: "Best Seller"
+                menuName: "Best Seller",href:"#"
             },
             {
-                menuName: "New Releases"
+                menuName: "New Releases",href:"#"
             },
             {
-                menuName: "Movers & Shakers"
+                menuName: "Movers & Shakers",href:"#"
             },
             {
-                menuName: "Brand & Dealers"
+                menuName: "Brand & Dealers",href:"/en/deals-offer"
             },
         ]
     },
@@ -82,19 +82,19 @@ export const ALL_CATEGORIES = [
         category: "Shop By Category",
         menuItems: [
             {
-                menuName: "Electronics"
+                menuName: "Electronics",href:"#"
             },
             {
-                menuName: "Fashions"
+                menuName: "Fashions",href:"#"
             },
             {
-                menuName: "Books"
+                menuName: "Books",href:"#"
             },
             {
-                menuName: "Beauty"
+                menuName: "Beauty",href:"#"
             },
             {
-                menuName: "Car & Motorcycle"
+                menuName: "Car & Motorcycle",href:"#"
             }
         ]
     },
@@ -102,10 +102,10 @@ export const ALL_CATEGORIES = [
         category: "Help & Settings",
         menuItems: [
             {
-                menuName: "Your Account"
+                menuName: "Your Account",href:"#"
             },
             {
-                menuName: "Customer Service"
+                menuName: "Customer Service",href:"#"
             },
         ]
     }
