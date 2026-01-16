@@ -15,7 +15,7 @@ import CategoryDrawerCloseButton from "./CategoryDrawerCloseButton";
 import { useRouter } from "next/navigation";
 
 const CategoryDrawer = () => {
-  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const { isOpen, onOpen, onOpenChange,onClose } = useDisclosure();
 
   const handleCloseDrawer = () => {
     onOpenChange(false);
@@ -86,6 +86,7 @@ const CategoryDrawer = () => {
                     ? "border-b-1 border-border-icon"
                     : ""
                 }
+                onClose={onClose}
               />
             ))}
           </DrawerBody>
