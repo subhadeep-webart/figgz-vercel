@@ -1,11 +1,17 @@
+"use client"
 import { Icons } from "@/assets";
 import OrderTableHeader from "../components/OrderTableHeader";
 import TableWrapper from "../components/TableWrapper";
 import CustomChip from "../../CustomChip";
 import { ORDER_CONFIRMED_HISTORY_TABLE_HEADER } from "@/constants";
 import CustomButton from "../../Buttons/CustomButton";
+import { useRouter } from "next/navigation";
 
 const OrderConfirmedHistoryTable = () => {
+   const router = useRouter();
+    const handleInvoice = () => {
+      router.push("/en/invoice");
+    };
   return (
     <TableWrapper>
       <OrderTableHeader
@@ -26,6 +32,7 @@ const OrderConfirmedHistoryTable = () => {
             <div className="!mt-[-54px]">
             <CustomButton
               className="!px-9 h-14 text-[#000000] font-medium text-base"
+              clickHandler={handleInvoice}
             >
               <span className="underline">Download Invoice</span>
             </CustomButton>

@@ -1,6 +1,7 @@
 import { cn } from "@heroui/react";
 import Link from "next/link";
-const MenuList = ({ className, headerText, menuItems ,onClose}) => {
+
+const MenuList = ({ className, headerText, menuItems,onClose }) => {
     console.log("Menu Items===>",menuItems)
     return (
         <div className={cn("text-white", className)}>
@@ -9,7 +10,6 @@ const MenuList = ({ className, headerText, menuItems ,onClose}) => {
                 {
                     menuItems?.map((menu, index) => (
                         <li key={`menu-${index + 1}`}><Link href={menu?.href} onClick={onClose}>{menu?.menuName}</Link></li>
-
                     ))
                 }
             </ul>

@@ -5,7 +5,7 @@ import CustomSelect from "@/components/ui/Select";
 
 const ProductDisplayInfo = () => {
   return (
-   <div className="">
+    <div className="">
       <div className="lg:flex justify-between hidden">
       <p className="font-normal text-text-display-info text-lg ">
         Showing Products{" "}
@@ -25,7 +25,7 @@ const ProductDisplayInfo = () => {
              defaultSelectedKeys={["Newest"]}
           />
 
-          <CustomSelect
+           <CustomSelect
             SIZE_CHART={[
               { key: "1", label: "1" },
               { key: "2", label: "2" },

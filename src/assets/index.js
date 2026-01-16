@@ -95,6 +95,7 @@ export const PUBLIC_IMAGES = {
   VendorSignupImg: "/images/auth/Vendor_signup.svg",
   VendorMembership: "/images/vendors/vendor-membership.png",
   VendorVerification: "/images/vendors/vendor-verification.png",
+  Invoice: "/images/profile/invoice.png",
 };
 
 export const Icons = {
