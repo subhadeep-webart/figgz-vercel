@@ -22,6 +22,7 @@ const ProductDisplayInfo = () => {
               { key: "Most searched", label: "Most searched" },
             ]}
             label="Sort by:"
+             defaultSelectedKeys={["Newest"]}
           />
 
           <CustomSelect
