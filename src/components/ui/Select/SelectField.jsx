@@ -34,7 +34,7 @@ const SelectField = ({
           classNames.trigger
         ),
 
-        value: cn("text-base font-normal text-black", classNames.value),
+        value: cn("text-sm font-normal text-text-forgot-pass", classNames.value),
 
         placeholder: cn(
           "text-[#919191] font-normal text-[15px]",
