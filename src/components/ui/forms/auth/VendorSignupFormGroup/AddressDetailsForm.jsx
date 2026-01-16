@@ -14,7 +14,7 @@ const AddressDetailsForm = () => {
   const router = useRouter();
 
   const handleRegister = () => {
-    router.push("/vendor-signup/uploads-document");
+    router.push("/vendor-signup/upload-document");
   };
 
   const handlePrevious = () => {
