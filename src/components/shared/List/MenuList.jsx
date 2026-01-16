@@ -9,6 +9,7 @@ const MenuList = ({ className, headerText, menuItems }) => {
                 {
                     menuItems?.map((menu, index) => (
                         <li key={`menu-${index + 1}`}><Link href={menu?.href}>{menu?.menuName}</Link></li>
+                        
                     ))
                 }
             </ul>
