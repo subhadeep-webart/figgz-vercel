@@ -3,8 +3,14 @@ import { Icons } from "@/assets";
 import VendorCardHeaderWrapper from "@/components/shared/Wrapper/VendorCardHeaderWrapper";
 import CustomButton from "@/components/ui/Buttons/CustomButton";
 import { Input } from "@heroui/react";
+import { useRouter } from "next/navigation";
 
 const AllCouponContainerHeader = () => {
+  const router = useRouter();
+  const handleNewCoupon = () => {
+    router.push("/vendor/add-coupon/general");
+  };
+
   return (
     <VendorCardHeaderWrapper
       headerText="All Coupon"
@@ -29,13 +35,15 @@ const AllCouponContainerHeader = () => {
                 "bg-transparent hover:!bg-transparent shadow-none group-data-[focus=true]:bg-transparent",
               innerWrapper: "!px-4",
             }}
-            endContent={<Icons.ChevronDown className="text-black !px-2" size={40} />}
+            endContent={
+              <Icons.ChevronDown className="text-black !px-2" size={40} />
+            }
             placeholder="Type"
           />
         </div>
         <CustomButton
           className="bg-primary text-raisin text-sm font-normal w-36 !py-2.5"
-        
+          clickHandler={handleNewCoupon}
         >
           Add Coupon
         </CustomButton>
