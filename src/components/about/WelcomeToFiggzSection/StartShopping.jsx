@@ -6,7 +6,7 @@ import Image from "next/image";
 const StartShopping = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 md:gap-9 ">
-      <div className="w-full h-[310px] md:relative hidden">
+      <div className="w-full h-[310px] relative hidden md:block">
         <Image
           src={PUBLIC_IMAGES.StartShopping}
           alt="Start Shopping"
