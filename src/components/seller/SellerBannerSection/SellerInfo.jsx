@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 import styles from "./banner.module.css";
-import { Icons } from "@/assets";
+import { Icons, PUBLIC_IMAGES } from "@/assets";
 import { Divider } from "@heroui/react";
 import CustomButton from "@/components/ui/Buttons/CustomButton";
 
