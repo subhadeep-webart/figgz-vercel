@@ -23,13 +23,14 @@ const ProductDisplayInfo = () => {
             label="Sort by:"
           />
 
-           <CustomSelect
+          <CustomSelect
             SIZE_CHART={[
-              { key: "Newest", label: "Newest" },
-              { key: "Popular", label: "Popular" },
-              { key: "Most searched", label: "Most searched" },
+              { key: "1", label: "1" },
+              { key: "2", label: "2" },
+              { key: "3", label: "3" },
             ]}
             label="Products Per Row"
+             defaultSelectedKeys={["1"]}
           />
       </div>
       </div>

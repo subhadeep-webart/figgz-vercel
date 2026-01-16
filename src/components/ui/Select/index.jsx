@@ -11,7 +11,8 @@ import {
 const CustomSelect = (
   {
     SIZE_CHART,
-    label
+    label,
+    defaultSelectedKeys,
     // defaultValue = "Newest",
     // options = ["Popular", "Most searched"],
     // onChange = () => { },
@@ -23,7 +24,7 @@ const CustomSelect = (
     <Select
       items={SIZE_CHART}
       className="md:w-[184px] w-[100px]"
-      defaultSelectedKeys={["Newest"]}
+     defaultSelectedKeys={defaultSelectedKeys}
       classNames={{
         trigger:
           "min-h-[42px] h-[42px] bg-white shadow-none border border-image-wrapper hover:!bg-white data-[hover=true]:bg-white !px-4",
