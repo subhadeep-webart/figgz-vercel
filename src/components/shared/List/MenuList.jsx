@@ -1,5 +1,5 @@
 import { cn } from "@heroui/react";
-
+import Link from "next/link";
 const MenuList = ({ className, headerText, menuItems }) => {
     console.log("Menu Items===>",menuItems)
     return (
@@ -9,7 +9,7 @@ const MenuList = ({ className, headerText, menuItems }) => {
                 {
                     menuItems?.map((menu, index) => (
                         <li key={`menu-${index + 1}`}><Link href={menu?.href}>{menu?.menuName}</Link></li>
-                        
+
                     ))
                 }
             </ul>
