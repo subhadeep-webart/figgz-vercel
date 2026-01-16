@@ -13,10 +13,10 @@ const Header = () => {
       <div className="container lg:hidden">
         <SearchBar />
       </div>
-      
+
       <CategoryNavMenu />
       <div className="container flex flex-col gap-5 md:hidden">
-              <Divider />
+        <Divider />
         <DeliverToSelect />
       </div>
     </header>

@@ -1,7 +1,14 @@
+"use client"
+import { useRouter } from "next/navigation";
 import CustomButton from "../../Buttons/CustomButton";
 import SellerTotalCard from "./SellerTotalCard";
 
 const BecomeASellerCard = () => {
+   const router = useRouter();
+  
+    const handleRegister = () => {
+      router.push("/vendor-signup");
+    };
   return (
     <>
     <div className="container">
@@ -17,7 +24,7 @@ const BecomeASellerCard = () => {
             </p>
           </div>
           <div className="flex gap-1.5 w-full md:w-1/2">
-            <CustomButton className="w-full bg-secondary rounded-3xl text-white text-xs h-9">
+            <CustomButton className="w-full bg-secondary rounded-3xl text-white text-xs h-9"   clickHandler={handleRegister}>
               Register as seller
             </CustomButton>
             <CustomButton className="w-full border border-secondary rounded-3xl text-secondary text-xs h-9">

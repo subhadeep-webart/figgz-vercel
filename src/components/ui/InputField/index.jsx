@@ -57,7 +57,7 @@ const InputField = ({
     <button
       type="button"
       onClick={() => setShowPassword(!showPassword)}
-      className="focus:outline-none"
+      className="focus:outline-none cursor-pointer"
     >
       {showPassword ? (
         <Icons.EyeOff className="text-[#222222]" size={18} />

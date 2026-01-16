@@ -41,26 +41,20 @@ const SelectField = ({
           classNames.placeholder
         ),
 
-        /* 🔽 DROPDOWN LIST STYLES */
         popoverContent: cn(
-          "rounded-none shadow-md border border-gray-200",
+          "rounded-lg shadow-md border border-faded text-xs",
           classNames.popoverContent
         ),
-
-        listbox: cn("!py-1 !px-3 ", classNames.listbox),
+     
+        listbox: cn("!py-3 !px-3", classNames.listbox),
 
         listboxWrapper: cn("max-h-60", classNames.listboxWrapper),
-
-        listboxItem: cn(
-          "!px-2 text-xs",
-          classNames.listboxItem
-        ),
 
         selectorIcon: cn("text-[#222222]", classNames.selectorIcon),
       }}
     >
       {options.map((opt) => (
-        <SelectItem key={opt.value} value={opt.value}>
+        <SelectItem key={opt.value} value={opt.value} className="!py-2 border-b border-order-banner-text-3 last:border-b-0 rounded-none">
           {opt.label}
         </SelectItem>
       ))}

@@ -1,4 +1,4 @@
-import { Eye, Star, EyeOff, Heart, Bell, Search, ChevronLeft, ChevronRight, RotateCw, Menu, ChevronDown, LogOut, Minus, Plus, X, UserRound, ClockFading, LayoutDashboard, ListCheck, Box, File, TicketCheck, Medal, Truck, Megaphone, Undo2, Pen, BadgeDollarSign, CalendarCheck, Ellipsis, Phone, ArrowDown, Wallet, ArrowUp, Download, UploadCloud, CircleChevronRight, ChartNoAxesGantt, CircleEllipsis } from "lucide-react";
+import { Eye, Star, EyeOff, Heart, Bell, Search, ChevronLeft, ChevronRight, RotateCw, Menu, ChevronDown, LogOut, Minus, Plus, X, UserRound, ClockFading, LayoutDashboard, ListCheck, Box, File, TicketCheck, Medal, Truck, Megaphone, Undo2, Pen, BadgeDollarSign, CalendarCheck, Ellipsis, Phone, ArrowDown, Wallet, ArrowUp, Download, UploadCloud, CircleChevronRight, ChartNoAxesGantt, CircleEllipsis, Upload, ImageUp } from "lucide-react";
 import { CartIcon } from "@/components/ui/Icons/CartIcon";
 import { GoogleIcon } from "@/components/ui/Icons/GoogleIcon";
 import { MailIcon } from "@/components/ui/Icons/MailIcon";
@@ -54,17 +54,17 @@ export const PUBLIC_IMAGES = {
   StartShopping: "/images/about/start-shopping.png",
   Team: "/images/about/team.png",
   AboutOurValuesBackground: "/images/background_images/about-us-our-values-bg.png",
-  SellerInfoBg:"/images/background_images/seller-info-bg.png",
-  SellerInfoProfile:"/images/seller/seller-info-profile.png",
-  SellerInfoIcon:"/images/seller/seller-info-icon.png",
-  SellerPerson:"/images/seller/person.png",
-  SellerEverydayStyle:"/images/seller/everyday-style.png",
-  SellerEverydayStyle2:"/images/seller/everyday-style-2.png",
-  SellerBestDeal:"/images/seller/best-deals.png",
-  SellerBestDeal2:"/images/seller/best-deals-2.png",
-  SellerTshirt:"/images/seller/tshirt.png",
-  SellerShoe:"/images/seller/shoe.png",
-  SellerBagpack:"/images/seller/bagpack.png",
+  SellerInfoBg: "/images/background_images/seller-info-bg.png",
+  SellerInfoProfile: "/images/seller/seller-info-profile.png",
+  SellerInfoIcon: "/images/seller/seller-info-icon.png",
+  SellerPerson: "/images/seller/person.png",
+  SellerEverydayStyle: "/images/seller/everyday-style.png",
+  SellerEverydayStyle2: "/images/seller/everyday-style-2.png",
+  SellerBestDeal: "/images/seller/best-deals.png",
+  SellerBestDeal2: "/images/seller/best-deals-2.png",
+  SellerTshirt: "/images/seller/tshirt.png",
+  SellerShoe: "/images/seller/shoe.png",
+  SellerBagpack: "/images/seller/bagpack.png",
 
   AboutUsBannerBg: "/images/background_images/about-us-banner-bg.png",
   SellerProfileBannerBg: "/images/background_images/seller-profile-banner-bg.png",
@@ -82,16 +82,19 @@ export const PUBLIC_IMAGES = {
   SellerEverydayStyle2: "/images/seller/everyday-style-2.png",
   SellerBestDeal: "/images/seller/best-deals.png",
   SellerBestDeal2: "/images/seller/best-deals-2.png",
-  PaypalLogo:"/images/profile/PayPal.png",
-  VisaLogo:"/images/profile/Visa.png",
-  OrderInfoBannerBg:"/images/background_images/order-info-banner-bg.png",
-  OrderInfoShoe:"/images/products/shoe-order.png",
-  OrderConfirmed:"/images/profile/order-confirmed.png",
-  DealsOfferBannerBg:"/images/background_images/deals-offer-banner-bg.png",
-  BrandFRWD:"/images/brands/brand_1.svg",
-  EarningGraph:"/images/vendors/graph-img.svg",
-  TrackingImg:"/images/profile/tracking-img.svg",
-  MeasurementImg:"/images/products/measurement-img.svg",
+  PaypalLogo: "/images/profile/PayPal.png",
+  VisaLogo: "/images/profile/Visa.png",
+  OrderInfoBannerBg: "/images/background_images/order-info-banner-bg.png",
+  OrderInfoShoe: "/images/products/shoe-order.png",
+  OrderConfirmed: "/images/profile/order-confirmed.png",
+  DealsOfferBannerBg: "/images/background_images/deals-offer-banner-bg.png",
+  BrandFRWD: "/images/brands/brand_1.svg",
+  EarningGraph: "/images/vendors/graph-img.svg",
+  TrackingImg: "/images/profile/tracking-img.svg",
+  MeasurementImg: "/images/products/measurement-img.svg",
+  VendorSignupImg: "/images/auth/Vendor_signup.svg",
+  VendorMembership: "/images/vendors/vendor-membership.png",
+  VendorVerification: "/images/vendors/vendor-verification.png",
 };
 
 export const Icons = {
@@ -161,12 +164,14 @@ export const Icons = {
   Phone,
   StarsRatingIcon,
   ArrowDown,
-  Wallet ,
-  ArrowUp ,
+  Wallet,
+  ArrowUp,
   Download,
   UploadCloud,
-  CircleChevronRight ,
+  CircleChevronRight,
   ChartNoAxesGantt,
-  CircleEllipsis
+  CircleEllipsis,
+  Upload,
+  ImageUp,
 };
 

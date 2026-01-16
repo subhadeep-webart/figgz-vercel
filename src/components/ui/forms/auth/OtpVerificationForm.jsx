@@ -3,14 +3,20 @@ import { Icons } from "@/assets";
 import CustomButton from "../../Buttons/CustomButton";
 import OtpInput from "../../InputField/OtpInput";
 import styles from "./authform.module.css";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const OtpVerificationForm = () => {
   const router = useRouter();
+const pathname = usePathname();
 
   const handleVerifyOtp = () => {
-    router.push("/en/login");
+    if (pathname.includes("vendor-signup/otp-verification")) {
+      router.push("/en/vendor-signup/membership"); 
+    } else {
+      router.push("/en/login");
+    }
   };
+
   return (
     <>
       <div className={styles.login_form_container}>

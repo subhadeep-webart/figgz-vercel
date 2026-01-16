@@ -6,14 +6,23 @@ const VendorTableWrapper = ({ label = "", columns = [], children }) => {
   console.log("Columns=====>", columns);
   return (
     <Table
-      aria-label={label} 
+      aria-label={label}
       classNames={{
-        wrapper: ["rounded-none"],
-        th: ["!px-7","text-sm"],
-        td: ["!px-7 !py-6","border-b border-vendor-table-divider"],
+        wrapper: "rounded-none",
+        table: "rounded-none",
+        thead: "rounded-none",
+        tr: "rounded-none",
+        th: [
+          "!rounded-none",
+          "!px-7",
+          "text-sm",
+          "first:rounded-none",
+          "last:rounded-none",
+        ],
+        td: ["!px-7", "!py-6", "border-b", "border-vendor-table-divider"],
       }}
     >
-      <TableHeader columns={columns}>
+      <TableHeader columns={columns} className="rounded-none">
         {(column) => <TableColumn key={column.key}>{column.label}</TableColumn>}
       </TableHeader>
       {children}

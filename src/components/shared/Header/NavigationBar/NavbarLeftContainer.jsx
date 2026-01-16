@@ -10,7 +10,7 @@ const NavbarLeftContainer = () => {
     return (
         <div className={styles.navbar_left}>
             <div className="lg:hidden">
-            <CategoryDrawer />
+                <CategoryDrawer />
             </div>
             <Link href="/en" className="lg:inline-block">
                 <div className="relative w-[100px] h-[30px] lg:w-[142px] lg:h-[52px]">
@@ -23,10 +23,10 @@ const NavbarLeftContainer = () => {
                 </div>
             </Link>
             <div className="hidden md:block">
-            <DeliverToSelect />
+                <DeliverToSelect />
             </div>
             <div className="hidden md:block">
-            <LanguageSelect />
+                <LanguageSelect />
             </div>
         </div>
     )

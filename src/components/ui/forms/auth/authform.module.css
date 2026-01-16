@@ -17,6 +17,15 @@
     gap: 40px;
 }
 
+.vendor_form_container{
+    max-width: 709px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+}
+
 @media (max-width: 480px) {
   .signup_form_container,.login_form_container {
     max-width: 288px;

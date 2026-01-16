@@ -1,3 +1,48 @@
+import OtpVerificationForm from "@/components/ui/forms/auth/OtpVerificationForm";
+import AccountVerificationForm from "@/components/ui/forms/auth/VendorSignupFormGroup/AccountVerificationForm";
+import AddressDetailsForm from "@/components/ui/forms/auth/VendorSignupFormGroup/AddressDetailsForm";
+import BankDetailsForm from "@/components/ui/forms/auth/VendorSignupFormGroup/BankDetailsForm";
+import BusinessDetailsForm from "@/components/ui/forms/auth/VendorSignupFormGroup/BusinessDetailsForm";
+import MembershipForm from "@/components/ui/forms/auth/VendorSignupFormGroup/MembershipForm";
+import StoreDetailsForm from "@/components/ui/forms/auth/VendorSignupFormGroup/StoreDetailsForm";
+import UploadDocumentsForm from "@/components/ui/forms/auth/VendorSignupFormGroup/UploadDocumentsForm";
+
+export const VENDOR_AUTH_FORM_STEP = [
+  {
+    href: "/vendor-signup/business-details",
+    Component: BusinessDetailsForm,
+  },
+  {
+    href: "/vendor-signup/address-details",
+    Component: AddressDetailsForm,
+  },
+  {
+    href: "/vendor-signup/upload-document",
+    Component: UploadDocumentsForm,
+  },
+  {
+    href: "/vendor-signup/store-details",
+    Component: StoreDetailsForm,
+  },
+  {
+    href: "/vendor-signup/bank-details",
+    Component: BankDetailsForm,
+  },
+
+  {
+    href: "/vendor-signup/otp-verification",
+    Component: OtpVerificationForm,
+  },
+  {
+    href: "/vendor-signup/membership",
+    Component: MembershipForm,
+  },
+   {
+    href: "/vendor-signup/account-verification",
+    Component: AccountVerificationForm,
+  },
+];
+
 export const RECENT_ORDER_TABLE_HEADER = [
   {
     key: "customer",

@@ -1,8 +1,15 @@
+"use client"
 import { PUBLIC_IMAGES } from "@/assets";
+import { useRouter } from "next/navigation";
 
 const Product = () => {
+  const router = useRouter();
+  
+    const handleReview = () => {
+      router.push("/vendor/reviews/detail");
+    };
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-4 cursor-pointer" onClick={handleReview}>
       <div className="w-16 h-16 rounded-full overflow-hidden">
         <img
           src={PUBLIC_IMAGES?.SellerShoe}

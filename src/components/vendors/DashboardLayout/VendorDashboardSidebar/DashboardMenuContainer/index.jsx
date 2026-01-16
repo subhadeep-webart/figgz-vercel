@@ -10,7 +10,9 @@ const DashboardMenuContainer = ({ menuItem }) => {
   const { name = "", Icon, iconProps, href } = menuItem;
   const pathname = usePathname();
 
-  const isActive = pathname === href || pathname.startsWith(`${href}/`);
+  const isActive = pathname === href 
+  // || pathname.startsWith(`${href}/`);
+
 
   return (
     <Link href={href} className="block w-full">

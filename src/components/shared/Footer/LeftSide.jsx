@@ -19,7 +19,7 @@ const LeftSide = () => {
       <div className="text-white">
         <h3 className="text-sm md:text-xl font-bold !mb-3">Customer Service</h3>
         <div className="font-normal text-xs md:text-sm flex flex-col gap-2">
-          <p>Order Tracking</p>
+          <Link href="/en/track">Order Tracking</Link>
           <Link href="/en/contact-us">Contact us</Link>
           <Link href={"/faq"}>FAQ’s/ Help Center</Link>
           <p>Shipping Information</p>
@@ -32,6 +32,7 @@ const LeftSide = () => {
           <Link href="/en/about-us">About us</Link>
           <p>Career At Figgz</p>
           <p>Blogs</p>
+          <Link href="/vendor-signup">Vendor Onboarding</Link>
         </div>
       </div>
       
