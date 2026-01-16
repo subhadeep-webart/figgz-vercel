@@ -13,7 +13,7 @@ const ProductBuyCartButtonContainer = () => {
                 <QuantityIncDscButton />
                 <ShopnowButton buttonText={"Buy Now"} className="bg-primary text-raisin text-sm rounded-4xl h-10" clickHandler={() => router.push("/en/checkout")} />
             </div>
-            <div className="flex gap-2">
+            <div className="flex gap-4">
             <AddToCartButtonDetails />
             <SellProductModal/>
             </div>
