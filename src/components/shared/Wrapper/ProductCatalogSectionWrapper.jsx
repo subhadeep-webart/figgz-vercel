@@ -67,6 +67,8 @@ const ProductCatalogSectionWrapper = ({
               { key: "Popular", label: "Popular" },
               { key: "Most searched", label: "Most searched" },
             ]}
+             label="Sort by:"
+             defaultSelectedKeys={["Newest"]}
           />
         )}
       </div>
