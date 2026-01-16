@@ -38,8 +38,9 @@ const ProductFilterAccordion = () => {
     { value: "39", label: "39" },
   ];
   return (
-    <Accordion>
+   <Accordion defaultExpandedKeys={["category", "price", "rating", "color", "size"]}>
       <AccordionItem
+      key="category"
         title="Category"
         aria-label="Category"
         className="!py-4"
@@ -50,6 +51,7 @@ const ProductFilterAccordion = () => {
         <ProductFilterTypeGroup options={catagories} orientation="vertical" />
       </AccordionItem>
       <AccordionItem
+        key="price"
         title="Price"
         aria-label="Price"
         className="!py-4"
@@ -60,6 +62,7 @@ const ProductFilterAccordion = () => {
         <PriceRangeSlider />
       </AccordionItem>
       <AccordionItem
+        key="rating"
         title="Product Rating"
         aria-label="Product Rating"
         className="!py-4"
@@ -82,6 +85,7 @@ const ProductFilterAccordion = () => {
       </AccordionItem>
 
       <AccordionItem
+        key="color"
         title="Color"
         aria-label="Color"
         className="!py-4"
@@ -103,6 +107,7 @@ const ProductFilterAccordion = () => {
         />
       </AccordionItem>
       <AccordionItem
+        key="size"
         title="Size"
         aria-label="Size"
         className="!py-4"
