@@ -1,6 +1,7 @@
 import { Icons } from "@/assets";
 import ProductFilterModal from "@/components/product-listing/ProductFilter/ProductFilterModal";
 import CustomButton from "@/components/ui/Buttons/CustomButton";
+import CustomSelect from "@/components/ui/Select";
 
 const ProductDisplayInfo = () => {
   return (
