@@ -13,7 +13,7 @@ const WishlistContainer = () => {
       <WishlistCard />
       <WishlistCard />
       <WishlistCard />
-      <div className="w-full flex flex-col gap-4 items-start justify-end">
+      <div className="w-full flex flex-col gap-4 items-end justify-end">
         <div className="md:w-48 w-full">
           <AddAllToCartButton />
         </div>
