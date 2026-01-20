@@ -58,6 +58,35 @@ export const CATEGORIES = [
   },
   {
     name: "Men's Fashion",
+    subMenus: [
+      {
+        title: "Clothing",
+        items: ["T-Shirts", "Shirts", "Jeans", "Trousers", "Jackets & Hoodies"],
+      },
+      {
+        title: "Footwear",
+        items: [
+          "Casual Shoes",
+          "Sports Shoes",
+          "Formal Shoes",
+          "Sandals & Slippers",
+        ],
+      },
+      {
+        title: "Accessories",
+        items: ["Watches", "Belts", "Wallets", "Caps & Hats", "Sunglasses"],
+      },
+      {
+        title: "Ethnic Wear",
+        items: ["Kurtas", "Nehru Jackets", "Sherwanis", "Ethnic Sets"],
+      },
+    ],
+    topBrands: [
+      { name: "Nike", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Adidas", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Levi's", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Puma", logo: "/images/logo/figzz_logo.svg" },
+    ],
   },
   {
     name: "Women's Fashion",
@@ -116,33 +145,325 @@ export const CATEGORIES = [
   },
   {
     name: "Beauty",
+    subMenus: [
+      {
+        title: "Makeup",
+        items: ["Face Makeup", "Eyes Makeup", "Lipsticks", "Nail Products"],
+      },
+      {
+        title: "Skincare",
+        items: [
+          "Moisturizers",
+          "Cleansers",
+          "Serums",
+          "Sunscreen",
+          "Face Masks",
+        ],
+      },
+      {
+        title: "Hair Care",
+        items: ["Shampoo", "Conditioner", "Hair Oil", "Hair Styling"],
+      },
+      {
+        title: "Fragrances",
+        items: ["Perfumes", "Deodorants", "Body Mists"],
+      },
+    ],
+    topBrands: [
+      { name: "Lakmé", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Maybelline", logo: "/images/logo/figzz_logo.svg" },
+      { name: "L'Oréal", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Nivea", logo: "/images/logo/figzz_logo.svg" },
+    ],
   },
   {
     name: "Baby",
+    subMenus: [
+      {
+        title: "Baby Care",
+        items: [
+          "Diapers & Wipes",
+          "Baby Bath & Skin Care",
+          "Baby Health",
+          "Baby Grooming",
+        ],
+      },
+      {
+        title: "Feeding",
+        items: [
+          "Feeding Bottles",
+          "Breast Pumps",
+          "Baby Food",
+          "Sippers & Cups",
+        ],
+      },
+      {
+        title: "Clothing",
+        items: [
+          "Baby Boy Clothing",
+          "Baby Girl Clothing",
+          "Winter Wear",
+          "Baby Accessories",
+        ],
+      },
+      {
+        title: "Gear",
+        items: ["Strollers", "Car Seats", "Carriers", "Baby Furniture"],
+      },
+    ],
+    topBrands: [
+      { name: "Pampers", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Johnson's", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Philips Avent", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Mee Mee", logo: "/images/logo/figzz_logo.svg" },
+    ],
   },
+
   {
     name: "Toys",
+    subMenus: [
+      {
+        title: "By Age",
+        items: ["0–2 Years", "3–5 Years", "6–8 Years", "9–12 Years"],
+      },
+      {
+        title: "Learning & Education",
+        items: ["STEM Toys", "Puzzles", "Building Blocks", "Educational Games"],
+      },
+      {
+        title: "Action & Play",
+        items: ["Action Figures", "Remote Control Toys", "Outdoor Play"],
+      },
+      {
+        title: "Dolls & Games",
+        items: ["Dolls & Dollhouses", "Board Games", "Card Games"],
+      },
+    ],
+    topBrands: [
+      { name: "LEGO", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Hot Wheels", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Barbie", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Funskool", logo: "/images/logo/figzz_logo.svg" },
+    ],
   },
   {
     name: "Sports & Outdoor",
+    subMenus: [
+      {
+        title: "Sports",
+        items: ["Cricket", "Football", "Badminton", "Gym Equipment"],
+      },
+      {
+        title: "Fitness",
+        items: ["Dumbbells", "Yoga Mats", "Resistance Bands", "Treadmills"],
+      },
+      {
+        title: "Outdoor Adventure",
+        items: ["Camping & Hiking", "Cycling", "Trekking Gear"],
+      },
+      {
+        title: "Sportswear",
+        items: ["Activewear", "Sports Shoes", "Track Pants"],
+      },
+    ],
+    topBrands: [
+      { name: "Decathlon", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Nike", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Adidas", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Puma", logo: "/images/logo/figzz_logo.svg" },
+    ],
   },
+
   {
     name: "Kitchen",
+    subMenus: [
+      {
+        title: "Cookware",
+        items: ["Pots & Pans", "Pressure Cookers", "Non-Stick Cookware"],
+      },
+      {
+        title: "Appliances",
+        items: [
+          "Mixer Grinders",
+          "Microwave Ovens",
+          "Air Fryers",
+          "Coffee Makers",
+        ],
+      },
+      {
+        title: "Kitchen Tools",
+        items: ["Knives & Choppers", "Utensils", "Graters & Peelers"],
+      },
+      {
+        title: "Storage",
+        items: ["Containers", "Water Bottles", "Lunch Boxes"],
+      },
+    ],
+    topBrands: [
+      { name: "Prestige", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Philips", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Pigeon", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Tupperware", logo: "/images/logo/figzz_logo.svg" },
+    ],
   },
+
   {
     name: "Women's Fashion",
+    subMenus: [
+      {
+        title: "Spring / Summer",
+        items: ["Tops", "Dresses", "Pants", "Sandals", "Skirts", "Swimwear"],
+      },
+      {
+        title: "Clothing",
+        items: [
+          "Tops",
+          "Dresses",
+          "Pants",
+          "Abayas & Jalabiyas",
+          "Jeans",
+          "Jumpsuits",
+          "Sportswear",
+        ],
+      },
+      {
+        title: "Footwear",
+        items: [
+          "Sports shoes",
+          "Sneakers",
+          "Sandals",
+          "Heels",
+          "Flats",
+          "Boots",
+          "Flip flops",
+          "Slides",
+        ],
+      },
+      {
+        title: "Bags & Accessories",
+        items: [
+          "Backpacks",
+          "Handbags",
+          "Luggage",
+          "Wallets",
+          "Jewelry",
+          "Watches",
+          "Eyewear",
+        ],
+      },
+    ],
+    topBrands: [
+      { name: "Apple", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Samsung", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Sony", logo: "/images/logo/figzz_logo.svg" },
+      { name: "LG", logo: "/images/logo/figzz_logo.svg" },
+    ],
   },
   {
     name: "Kid's Fashion",
   },
-  {
+   {
     name: "Beauty",
+    subMenus: [
+      {
+        title: "Makeup",
+        items: ["Face Makeup", "Eyes Makeup", "Lipsticks", "Nail Products"],
+      },
+      {
+        title: "Skincare",
+        items: [
+          "Moisturizers",
+          "Cleansers",
+          "Serums",
+          "Sunscreen",
+          "Face Masks",
+        ],
+      },
+      {
+        title: "Hair Care",
+        items: ["Shampoo", "Conditioner", "Hair Oil", "Hair Styling"],
+      },
+      {
+        title: "Fragrances",
+        items: ["Perfumes", "Deodorants", "Body Mists"],
+      },
+    ],
+    topBrands: [
+      { name: "Lakmé", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Maybelline", logo: "/images/logo/figzz_logo.svg" },
+      { name: "L'Oréal", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Nivea", logo: "/images/logo/figzz_logo.svg" },
+    ],
   },
   {
     name: "Baby",
+    subMenus: [
+      {
+        title: "Baby Care",
+        items: [
+          "Diapers & Wipes",
+          "Baby Bath & Skin Care",
+          "Baby Health",
+          "Baby Grooming",
+        ],
+      },
+      {
+        title: "Feeding",
+        items: [
+          "Feeding Bottles",
+          "Breast Pumps",
+          "Baby Food",
+          "Sippers & Cups",
+        ],
+      },
+      {
+        title: "Clothing",
+        items: [
+          "Baby Boy Clothing",
+          "Baby Girl Clothing",
+          "Winter Wear",
+          "Baby Accessories",
+        ],
+      },
+      {
+        title: "Gear",
+        items: ["Strollers", "Car Seats", "Carriers", "Baby Furniture"],
+      },
+    ],
+    topBrands: [
+      { name: "Pampers", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Johnson's", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Philips Avent", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Mee Mee", logo: "/images/logo/figzz_logo.svg" },
+    ],
   },
+
   {
     name: "Toys",
+    subMenus: [
+      {
+        title: "By Age",
+        items: ["0–2 Years", "3–5 Years", "6–8 Years", "9–12 Years"],
+      },
+      {
+        title: "Learning & Education",
+        items: ["STEM Toys", "Puzzles", "Building Blocks", "Educational Games"],
+      },
+      {
+        title: "Action & Play",
+        items: ["Action Figures", "Remote Control Toys", "Outdoor Play"],
+      },
+      {
+        title: "Dolls & Games",
+        items: ["Dolls & Dollhouses", "Board Games", "Card Games"],
+      },
+    ],
+    topBrands: [
+      { name: "LEGO", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Hot Wheels", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Barbie", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Funskool", logo: "/images/logo/figzz_logo.svg" },
+    ],
   },
 ];
 
