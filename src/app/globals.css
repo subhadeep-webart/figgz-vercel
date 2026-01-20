@@ -19,9 +19,9 @@
   --bg-otp-icon: #d9d9d9;
   --bg-otp-icon: #d9d9d9;
   --banner-btn: #003984;
-  --bg-footer-bottom: #2B2A2A;
-  --bg-shopping-cart: #F5F6F8;
-  --bg-delivery-address: #E6E9F0;
+  --bg-footer-bottom: #2b2a2a;
+  --bg-shopping-cart: #f5f6f8;
+  --bg-delivery-address: #e6e9f0;
   /* border color*/
   --border-base: #c3c3c3;
   --border-secondary: #c9c9c9;
@@ -29,119 +29,118 @@
   --border-icon: #cfcfcf;
   --border-category: #bfbebe;
   --border-seller-card: #cc8700;
-  --border-product-filter: #F48B22;
-  --border-size-color: #DCDCDC;
-  --border-product-description: #AFAFAF80;
-  --border-cupon-code: #C7C5C5;
-  --border-select-item: #DEDEDE;
-  --border-seller-dashed: #23435B --border-select-item: #DEDEDE;
+  --border-product-filter: #f48b22;
+  --border-size-color: #dcdcdc;
+  --border-product-description: #afafaf80;
+  --border-cupon-code: #c7c5c5;
+  --border-select-item: #dedede;
+  --border-seller-dashed: #23435b --border-select-item: #dedede;
   /* text color*/
   --text-base: #5e5e5e;
   --text-secondary: #6e6e6e;
   --text-info: #3f3f3f;
   --text-success: #177712;
-  --text-warning: #E57525;
-  --text-danger: #E35252;
+  --text-warning: #e57525;
+  --text-danger: #e35252;
   --text-otp: #9d9d9d;
   --text-otp-resend: #474747;
   --text-forgot-pass: #919191;
   --text-otp: #9d9d9d;
   --text-otp-resend: #474747;
   --text-footer-bottom: #848484;
-  --text-green-default: #236E26;
-  --text-gray-default: #8D8D8D;
+  --text-green-default: #236e26;
+  --text-gray-default: #8d8d8d;
   --text-display-info: #817777;
-  --text-cart-select: #A1A1A1;
-  --checkbox-text: #413E3E;
-  --product-text-secondary: #6C6C6C;
+  --text-cart-select: #a1a1a1;
+  --checkbox-text: #413e3e;
+  --product-text-secondary: #6c6c6c;
   --product-text-base: #191818;
   --product-text-info: #565656;
   --product-text-info2: #929292;
-  --product-text-strike: #A9A8A8;
+  --product-text-strike: #a9a8a8;
   --text-payment-info: #606060;
 
   /* dashboard */
-  --bg-sidebar-icon-container: #F2F2F3;
-  --text-sidebar-icon: #A9A9A9;
-  --text-sidebar-lucide: #6B6B6B;
+  --bg-sidebar-icon-container: #f2f2f3;
+  --text-sidebar-icon: #a9a9a9;
+  --text-sidebar-lucide: #6b6b6b;
   --text-sidebar: #666666;
 
   /*vendor dashboard*/
-  --text-vendor-base: #21201A;
-  --text-vendor-warning: #F57B20;
-  --text-vendor-danger: #A7575B;
-  --text-vendor-info: #0C9FA1;
-  --text-vendor-success: #06713A;
-  --text-vendor-sidebar: #1E4240;
+  --text-vendor-base: #21201a;
+  --text-vendor-warning: #f57b20;
+  --text-vendor-danger: #a7575b;
+  --text-vendor-info: #0c9fa1;
+  --text-vendor-success: #06713a;
+  --text-vendor-sidebar: #1e4240;
   --text-sidebar-lucide: #636363;
-  --border-vendor-avatar: #FA69BF;
-  --text-avatar-heading: #1B3139;
-  --border-sidebar-divider: #E4E4E4;
+  --border-vendor-avatar: #fa69bf;
+  --text-avatar-heading: #1b3139;
+  --border-sidebar-divider: #e4e4e4;
   /*vendor dashboard card*/
-  --text-vendor-card-success: #CDFEF3;
-  --text-vendor-card-warning: #F9ECE2;
-  --text-vendor-card-info: #E2E7FF;
-  --border-vendor-border-success: #3BB29F;
-  --text-invoice-text: #006F70;
+  --text-vendor-card-success: #cdfef3;
+  --text-vendor-card-warning: #f9ece2;
+  --text-vendor-card-info: #e2e7ff;
+  --border-vendor-border-success: #3bb29f;
+  --text-invoice-text: #006f70;
   --text-invoice-date: #767676;
   --text-top-product-chip: #015555;
   --text-card-header: #758282;
-  --text-vendor-section-header: #9C9C9C;
-  --text-product-active: #092D63;
-  --border-product-search: #D5D5D5;
-  --border-top-product-chip: #C8D8D8;
-  --border-vendor-card-header: #CEBA18;
-  --border-vendor-table-divider: #E5E5E5;
+  --text-vendor-section-header: #9c9c9c;
+  --text-product-active: #092d63;
+  --border-product-search: #d5d5d5;
+  --border-top-product-chip: #c8d8d8;
+  --border-vendor-card-header: #ceba18;
+  --border-vendor-table-divider: #e5e5e5;
   --ring-color: #003984;
   /* Your banner-btn color */
   --ring-thickness: 2px;
   /* Order History Table*/
-  --bg-order-table-header: #D9E0E6;
+  --bg-order-table-header: #d9e0e6;
   --text-everyday: #272727;
-  --order-banner-text: #FFF3EB;
-  --order-banner-text-2: #E5E5E5;
-  --order-banner-text-3: #D4D4D4;
-  --order-banner-text-4: #EED5A4;
+  --order-banner-text: #fff3eb;
+  --order-banner-text-2: #e5e5e5;
+  --order-banner-text-3: #d4d4d4;
+  --order-banner-text-4: #eed5a4;
   --order-infos-text: #838383;
-  --order-info-border: #A2A2A2;
+  --order-info-border: #a2a2a2;
 
-
-  --bg-seller-seasonal-wear-badge:#F2A249;
-  --deals-offer-text:#4D4343;
-  --deals-offer-text-2:#414042;
-  --deals-offer-text-3:#9E750B;
-  --border-brands:#F9DEC3;
-  
-  --bg-seller-seasonal-wear-badge: #F2A249;
-  --deals-offer-text: #4D4343;
+  --bg-seller-seasonal-wear-badge: #f2a249;
+  --deals-offer-text: #4d4343;
   --deals-offer-text-2: #414042;
-  --deals-offer-text-3: #9E750B;
-  --border-deals-catalog: #9DA1A4;
-  --text-deals-catalog-text: #4A4F52;
-  --border-on-the-way:#EC9C00;
-  --border-on-the-way-2:#457108;
-  --text-accordion-content: #292D32;
-  --text-contact-us:#4C4848;
-  --contact-card-bg:#F2F2F2;
-  --contact-card-border:#E0E0E0;
+  --deals-offer-text-3: #9e750b;
+  --border-brands: #f9dec3;
 
-  --alabaster:#F5F0EB;
-  --gray:#808080;
-  --medium-gray:#A6A6A6;
-  --mint-green:#D9FFEC;
-  --dark-gray:#535353;
-  --lime-green:#D5FF51;
-  --teal:#00AAAB;
-  --very-light-gray:#DFDFDF;
-  --silver:#E7E7E7;
-  --dark-slate-blue:#1B304226;
-  --burnt-orange:#C2550A;
-  --neutral-gray:#868686;
-  --steel-blue:#699CC8;
-  --slate-blue:#718EBF;
-  --raisin-black:#232323;
-  --dim-gray:#555555;
-  --silver-gray:#CECECE;
+  --bg-seller-seasonal-wear-badge: #f2a249;
+  --deals-offer-text: #4d4343;
+  --deals-offer-text-2: #414042;
+  --deals-offer-text-3: #9e750b;
+  --border-deals-catalog: #9da1a4;
+  --text-deals-catalog-text: #4a4f52;
+  --border-on-the-way: #ec9c00;
+  --border-on-the-way-2: #457108;
+  --text-accordion-content: #292d32;
+  --text-contact-us: #4c4848;
+  --contact-card-bg: #f2f2f2;
+  --contact-card-border: #e0e0e0;
+
+  --alabaster: #f5f0eb;
+  --gray: #808080;
+  --medium-gray: #a6a6a6;
+  --mint-green: #d9ffec;
+  --dark-gray: #535353;
+  --lime-green: #d5ff51;
+  --teal: #00aaab;
+  --very-light-gray: #dfdfdf;
+  --silver: #e7e7e7;
+  --dark-slate-blue: #1b304226;
+  --burnt-orange: #c2550a;
+  --neutral-gray: #868686;
+  --steel-blue: #699cc8;
+  --slate-blue: #718ebf;
+  --raisin-black: #232323;
+  --dim-gray: #555555;
+  --silver-gray: #cecece;
 }
 
 @utility container {
@@ -209,21 +208,6 @@
   --color-danger: var(--text-danger);
   --color-product-text-info-2: var(--bg-product-text-info-2);
   --color-border-select-item: var(--bg-border-select-item);
-  --color-text-everyday:var(--text-everyday);
-  --color-border-seller-dashed:var(--border-seller-dashed);
-  --color-bg-seller-seasonal-wear-badge:var(--bg-seller-seasonal-wear-badge);
-  --color-order-banner-text:var(--order-banner-text);
-  --color-order-banner-text-2:var(--order-banner-text-2);
-  --color-order-banner-text-3:var(--order-banner-text-3);
-  --color-order-banner-text-4:var(--order-banner-text-4);
-  --color-order-infos-text:var(--order-infos-text);
-  --color-order-info-border:var(--order-info-border);
-  --color-deals-offer-text:var(--deals-offer-text);
-  --color-deals-offer-text-2:var(--deals-offer-text-2);
-  --color-deals-offer-text-3:var(--deals-offer-text-3);
-  --color-border-brands:var(--border-brands);
- 
-  
   --color-text-everyday: var(--text-everyday);
   --color-border-seller-dashed: var(--border-seller-dashed);
   --color-bg-seller-seasonal-wear-badge: var(--bg-seller-seasonal-wear-badge);
@@ -236,12 +220,25 @@
   --color-deals-offer-text: var(--deals-offer-text);
   --color-deals-offer-text-2: var(--deals-offer-text-2);
   --color-deals-offer-text-3: var(--deals-offer-text-3);
-  --color-border-on-the-way:var(--border-on-the-way);
-  --color-border-on-the-way-2:var(--border-on-the-way-2);
-  --color-text-contact-us:vat(--text-contact-us);
-  --color-contact-card-bg:var(--contact-card-bg);
-  --color-contact-card-border:var(--contact-card-border);
+  --color-border-brands: var(--border-brands);
 
+  --color-text-everyday: var(--text-everyday);
+  --color-border-seller-dashed: var(--border-seller-dashed);
+  --color-bg-seller-seasonal-wear-badge: var(--bg-seller-seasonal-wear-badge);
+  --color-order-banner-text: var(--order-banner-text);
+  --color-order-banner-text-2: var(--order-banner-text-2);
+  --color-order-banner-text-3: var(--order-banner-text-3);
+  --color-order-banner-text-4: var(--order-banner-text-4);
+  --color-order-infos-text: var(--order-infos-text);
+  --color-order-info-border: var(--order-info-border);
+  --color-deals-offer-text: var(--deals-offer-text);
+  --color-deals-offer-text-2: var(--deals-offer-text-2);
+  --color-deals-offer-text-3: var(--deals-offer-text-3);
+  --color-border-on-the-way: var(--border-on-the-way);
+  --color-border-on-the-way-2: var(--border-on-the-way-2);
+  --color-text-contact-us: vat(--text-contact-us);
+  --color-contact-card-bg: var(--contact-card-bg);
+  --color-contact-card-border: var(--contact-card-border);
 
   /* vendor dashboard */
   --color-vendor-base: var(--text-vendor-base);
@@ -271,23 +268,22 @@
   --color-border-vendor-border-success: var(--border-vendor-border-success);
 
   --color-alabaster: var(--alabaster);
-  --color-gray:var(--gray);
-  --color-medium-gray:var(--medium-gray);
-  --color-mint-green:var(--mint-green);
-  --color-dark-gray:var(--dark-gray);
-  --color-lime-green:var(--lime-green);
-  --color-teal:var(--teal);
-  --color-very-light-gray:var(--very-light-gray);
-  --color-silver:var(--silver);
-  --color-dark-slate-blue:var(--dark-slate-blue);
-  --color-burnt-orange:var(--burnt-orange);
-  --color-neutral-gray:var(--neutral-gray);
-  --color-steel-blue:var(--steel-blue);
-  --color-slate-blue:var(--slate-blue);
-  --color-raisin-black:var(--raisin-black);
-  --color-dim-gray:var(--dim-gray);
-  --color-silver-gray:var(--silver-gray);
-
+  --color-gray: var(--gray);
+  --color-medium-gray: var(--medium-gray);
+  --color-mint-green: var(--mint-green);
+  --color-dark-gray: var(--dark-gray);
+  --color-lime-green: var(--lime-green);
+  --color-teal: var(--teal);
+  --color-very-light-gray: var(--very-light-gray);
+  --color-silver: var(--silver);
+  --color-dark-slate-blue: var(--dark-slate-blue);
+  --color-burnt-orange: var(--burnt-orange);
+  --color-neutral-gray: var(--neutral-gray);
+  --color-steel-blue: var(--steel-blue);
+  --color-slate-blue: var(--slate-blue);
+  --color-raisin-black: var(--raisin-black);
+  --color-dim-gray: var(--dim-gray);
+  --color-silver-gray: var(--silver-gray);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -332,7 +328,6 @@ body {
     color-scheme: dark;
   }
 } */
-
 
 .banner_slider_swipper {
   padding: 0 !important;
@@ -384,19 +379,32 @@ body {
 }
 
 .similar_product_bg_gradient {
-  background: linear-gradient(292.71deg, rgba(254, 168, 0, 0.6) -68.62%, rgba(254, 168, 0, 0) 45%), linear-gradient(280.94deg, rgba(254, 168, 0, 0) 57.93%, rgba(254, 168, 0, 0.25) 103.02%),
-  ;
+  background:
+    linear-gradient(
+      292.71deg,
+      rgba(254, 168, 0, 0.6) -68.62%,
+      rgba(254, 168, 0, 0) 45%
+    ),
+    linear-gradient(
+      280.94deg,
+      rgba(254, 168, 0, 0) 57.93%,
+      rgba(254, 168, 0, 0.25) 103.02%
+    );
 }
 
 .gradient-circle-border {
   border: 1px solid;
-  border-image-source: linear-gradient(180deg, #FEA800 0%, rgba(254, 168, 0, 0) 67.39%);
+  border-image-source: linear-gradient(
+    180deg,
+    #fea800 0%,
+    rgba(254, 168, 0, 0) 67.39%
+  );
   border-image-slice: 1;
   border-image-repeat: stretch;
 }
 
 .calendar-cut-border::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   width: 100%;
@@ -408,7 +416,7 @@ body {
 
 /* 2. Create the smooth swirl effect using ::before (optional but recommended) */
 .calendar-cut-border::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   width: 100%;
@@ -419,7 +427,7 @@ body {
 }
 
 /* Ensure the icon content is above the border */
-.calendar-cut-border>div {
+.calendar-cut-border > div {
   z-index: 10;
 }
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { COUNTRY_LIST } from "@/constants";
+import { LANGUAGE_LIST } from "@/constants";
 import { Select, SelectItem } from "@heroui/react";
 import SelectCountryDisplay from "../components/SelectCountryDisplay";
 
@@ -8,8 +8,8 @@ const LanguageSelect = () => {
     return (
 
         <Select
-            items={COUNTRY_LIST}
-            defaultSelectedKeys={["usa"]}
+            items={LANGUAGE_LIST}
+            defaultSelectedKeys={["english"]}
             variant="underlined"
             classNames={{
                 trigger:
@@ -19,13 +19,13 @@ const LanguageSelect = () => {
             }}
             popoverProps={{
                 classNames: {
-                    base: "w-20",
-                    content: "w-20",
+                    base: "w-24",
+                    content: "w-24",
                 },
             }}
             renderValue={(items) => {
                 console.log("Items=====>", items);
-                return items.map((item) => (<SelectCountryDisplay key={item.data.key} icon={item.data.flag} />))
+                return items.map((item) => (<SelectCountryDisplay key={item.data.key} text={item.data.label}/>))
             }}
         >
             {
@@ -33,9 +33,10 @@ const LanguageSelect = () => {
                     <SelectItem
                         key={country.key}
                         value={country.key}
+                        textValue={country.label}
                         className="!px-2 !py-2"
                     >
-                        <SelectCountryDisplay icon={country.flag} />
+                        <SelectCountryDisplay text={country.label}/>
                     </SelectItem>
                 )
             }

@@ -13,16 +13,16 @@ const WishlistContainer = () => {
       <WishlistCard />
       <WishlistCard />
       <WishlistCard />
-      <div className="w-full flex flex-col gap-4 items-end justify-end">
-        <div className="md:w-48 w-full">
+      {/* <div className="w-full flex flex-col gap-4 items-end justify-end"> */}
+        {/* <div className="md:w-48 w-full">
           <AddAllToCartButton />
-        </div>
+        </div> */}
         <div className="md:hidden w-full">
           <CustomButton className="w-full bg-transparent border border-secondary text-secondary h-10 font-semibold text-sm rounded-3xl">
             Continue Shopping
           </CustomButton>
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 };

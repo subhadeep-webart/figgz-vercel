@@ -6,7 +6,7 @@ import { Divider } from "@heroui/react";
 
 const Header = () => {
   return (
-    <header className="w-full flex flex-col gap-5 !py-4">
+    <header className="w-full flex flex-col gap-5 !py-4 !z-[90]">
       <div className="container">
         <NavigationBar />
       </div>
