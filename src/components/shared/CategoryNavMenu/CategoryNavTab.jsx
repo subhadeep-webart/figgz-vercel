@@ -15,7 +15,7 @@ const CategoryNavTab = ({ navTitle, onOpenChange }) => {
 
   const handleOpenChange = (isOpen) => {
     setOpen(isOpen);
-    onOpenChange?.(isOpen); // Notify parent
+    onOpenChange?.(isOpen); 
   };
 
   if (!navTitle?.subMenus) {
@@ -43,7 +43,7 @@ const CategoryNavTab = ({ navTitle, onOpenChange }) => {
         closeOnSelect={false}
         radius="none"
         classNames={{
-          base: "!left-[-15px] !right-0 !transform-none !max-w-none",
+          base: "!left-[-12px] !right-[0] !transform-none !max-w-none",
         }}
       >
         <DropdownTrigger>
