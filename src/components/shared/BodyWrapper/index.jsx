@@ -13,7 +13,7 @@ export default function BodyWrapper({ children }) {
       {isDropdownOpen && (
         <div
           className="fixed inset-0 bg-black/50 z-[70] transition-opacity duration-300 pointer-events-none"
-          style={{ top: "20%" }}
+          style={{ top: "50%" }}
         />
       )}
 
