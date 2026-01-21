@@ -1,4 +1,4 @@
-import { Eye, Star, EyeOff, Heart, Bell, Search, ChevronLeft, ChevronRight, RotateCw, Menu, ChevronDown, LogOut, Minus, Plus, X, UserRound, ClockFading, LayoutDashboard, ListCheck, Box, File, TicketCheck, Medal, Truck, Megaphone, Undo2, Pen, BadgeDollarSign, CalendarCheck, Ellipsis, Phone, ArrowDown, Wallet, ArrowUp, Download, UploadCloud, CircleChevronRight, ChartNoAxesGantt, CircleEllipsis, Upload, ImageUp } from "lucide-react";
+import { Eye, Star, EyeOff, Heart, Bell, Search, ChevronLeft, ChevronRight, RotateCw, Menu, ChevronDown, LogOut, Minus, Plus, X, UserRound, ClockFading, LayoutDashboard, ListCheck, Box, File, TicketCheck, Medal, Truck, Megaphone, Undo2, Pen, BadgeDollarSign, CalendarCheck, Ellipsis, Phone, ArrowDown, Wallet, ArrowUp, Download, UploadCloud, CircleChevronRight, ChartNoAxesGantt, CircleEllipsis, Upload, ImageUp, PenLine } from "lucide-react";
 import { CartIcon } from "@/components/ui/Icons/CartIcon";
 import { GoogleIcon } from "@/components/ui/Icons/GoogleIcon";
 import { MailIcon } from "@/components/ui/Icons/MailIcon";
@@ -91,6 +91,7 @@ export const PUBLIC_IMAGES = {
   BrandFRWD: "/images/brands/brand_1.svg",
   EarningGraph: "/images/vendors/graph-img.svg",
   TrackingImg: "/images/profile/tracking-img.svg",
+  TrackingImgMobile: "/images/profile/order-track-img.png",
   MeasurementImg: "/images/products/measurement-img.svg",
   VendorSignupImg: "/images/auth/Vendor_signup.svg",
   VendorMembership: "/images/vendors/vendor-membership.png",
@@ -174,5 +175,6 @@ export const Icons = {
   CircleEllipsis,
   Upload,
   ImageUp,
+  PenLine,
 };
 

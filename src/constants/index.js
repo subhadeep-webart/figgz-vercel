@@ -142,6 +142,55 @@ export const CATEGORIES = [
   },
   {
     name: "Kid's Fashion",
+    subMenus: [
+      {
+        title: "Spring / Summer",
+        items: ["Tops", "Dresses", "Pants", "Sandals", "Skirts", "Swimwear"],
+      },
+      {
+        title: "Clothing",
+        items: [
+          "Tops",
+          "Dresses",
+          "Pants",
+          "Abayas & Jalabiyas",
+          "Jeans",
+          "Jumpsuits",
+          "Sportswear",
+        ],
+      },
+      {
+        title: "Footwear",
+        items: [
+          "Sports shoes",
+          "Sneakers",
+          "Sandals",
+          "Heels",
+          "Flats",
+          "Boots",
+          "Flip flops",
+          "Slides",
+        ],
+      },
+      {
+        title: "Bags & Accessories",
+        items: [
+          "Backpacks",
+          "Handbags",
+          "Luggage",
+          "Wallets",
+          "Jewelry",
+          "Watches",
+          "Eyewear",
+        ],
+      },
+    ],
+    topBrands: [
+      { name: "Apple", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Samsung", logo: "/images/logo/figzz_logo.svg" },
+      { name: "Sony", logo: "/images/logo/figzz_logo.svg" },
+      { name: "LG", logo: "/images/logo/figzz_logo.svg" },
+    ],
   },
   {
     name: "Beauty",
@@ -362,7 +411,7 @@ export const CATEGORIES = [
   {
     name: "Kid's Fashion",
   },
-   {
+  {
     name: "Beauty",
     subMenus: [
       {

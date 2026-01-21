@@ -1,10 +1,10 @@
+import CustomButton from "../../Buttons/CustomButton";
 import InputField from "../../InputField";
-import SelectField from "../../Select/SelectField";
 
 const AddressForm = () => {
   return (
-    <div className="flex flex-col gap-8">
-      <div className="flex gap-14">
+    <div className="grid gap-8 border border-border-product-filter !p-5 md:border-none md:!p-0 rounded-3xl md:rounded-none">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-14">
         <InputField
           label="Business Address Line 1"
           placeholder="Enter address line 1"
@@ -16,7 +16,8 @@ const AddressForm = () => {
           type="text"
         />
       </div>
-      <div className="flex gap-14">
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-14">
         <InputField label="City" placeholder="Enter city name" type="text" />
         <InputField
           label="State / Province"
@@ -24,17 +25,9 @@ const AddressForm = () => {
           type="text"
         />
         <InputField label="Country" placeholder="Select country" type="text" />
-        {/* <SelectField
-          label="Country"
-          placeholder="Select country"
-          options={[
-            { label: "USA", value: "us" },
-            { label: "Canada", value: "ca" },
-            { label: "United Kingdom", value: "uk" },
-          ]}
-        /> */}
       </div>
-      <div className="flex gap-14">
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-14">
         <InputField
           label="Postal / ZIP Code"
           placeholder="Enter Postal / ZIP Code"
@@ -51,6 +44,8 @@ const AddressForm = () => {
           type="text"
         />
       </div>
+
+      <CustomButton className="md:hidden">Add Address</CustomButton>
     </div>
   );
 };

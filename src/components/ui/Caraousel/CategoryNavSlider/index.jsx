@@ -10,7 +10,6 @@ import CategoryNavTab from "@/components/shared/CategoryNavMenu/CategoryNavTab";
 
 const CategoryNavSlider = ({
     data = [],
-    onDropdownOpen
 }) => {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
@@ -53,7 +52,7 @@ const CategoryNavSlider = ({
             >
                 {data?.map((item, index) => (
                     <SwiperSlide key={index} className="auto_slide">
-                        <CategoryNavTab navTitle={item}  onOpenChange={onDropdownOpen}/>
+                        <CategoryNavTab navTitle={item}  />
                     </SwiperSlide>
                 ))}
             </Swiper>

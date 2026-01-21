@@ -18,3 +18,9 @@
     mask-composite: exclude;
     pointer-events: none;
 }
+
+@media (max-width: 768px) {
+  .sidebar_wrapper {
+    display: none;
+  }
+}
