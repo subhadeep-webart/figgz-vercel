@@ -61,7 +61,7 @@ const CategoryNavSlider = ({
                 nextRef={nextRef}
                 onPrevClick={handlePrevClick}
                 onNextClick={handleNextClick}
-                buttonStyle="border-none !bg-transparent shadow-none"
+                buttonStyle="border-none !bg-transparent shadow-none top-[14px]"
                 showPrev={showPrev}
                 showNext={showNext}
             />
