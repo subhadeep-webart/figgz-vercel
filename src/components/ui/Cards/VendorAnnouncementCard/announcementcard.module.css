@@ -7,3 +7,9 @@
     border-radius: 16px;
     box-shadow: 0 1px rgb(0 0 0 / 0.05);
 }
+
+@media (max-width:480px) {
+    .announcement_inner{
+        size:10px
+    }
+}

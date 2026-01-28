@@ -12,22 +12,22 @@ const AllReviewsContainer = () => {
   return (
     <VendorDashboardTableWrapper>
       <div className="flex flex-col gap-8">
-        <div className="grid grid-cols-2 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-0">
           <Product />
           <Review />
         </div>
         <Divider className="bg-transparent border-solid border-vendor-table-divider" />
-         <div className="grid grid-cols-2 ">
+         <div className="grid grid-cols-1 md:grid-cols-2 ">
           <Product />
           <Review />
         </div>
         <Divider className="bg-transparent border-solid border-vendor-table-divider" />
-         <div className="grid grid-cols-2 ">
+         <div className="grid grid-cols-1 md:grid-cols-2 ">
           <Product />
           <Review />
         </div>
         <Divider className="bg-transparent border-solid border-vendor-table-divider" />
-         <div className="grid grid-cols-2 ">
+         <div className="grid grid-cols-1 md:grid-cols-2 ">
           <Product />
           <Review />
         </div>

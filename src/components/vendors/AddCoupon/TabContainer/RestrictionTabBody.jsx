@@ -9,7 +9,7 @@ const RestrictionTabBody = () => {
     <VendorDashboardTableWrapper>
       <form>
         <div className="flex flex-col gap-4">
-          <div className="flex gap-6">
+          <div className="flex flex-col md:flex-row gap-6">
             <InputField
               label="Minimum spend"
               placeholder="Choose a Status"
@@ -38,8 +38,8 @@ const RestrictionTabBody = () => {
             <Radio
               classNames={{
                 base: "flex gap-3 items-start",
-                label: "text-black font-medium text-base",
-                description: "text-text-forgot-pass text-base font-normal",
+                label: "text-black font-medium text-sm md:text-base",
+                description: "text-text-forgot-pass text-sm md:text-base font-normal",
               }}
               description="Check this box if the coupon cannot be used in conjunction with other coupons."
             />
@@ -56,8 +56,8 @@ const RestrictionTabBody = () => {
             <Radio
               classNames={{
                 base: "flex gap-3 items-start",
-                label: "text-black font-medium text-base",
-                description: "text-text-forgot-pass text-base font-normal",
+                label: "text-black font-medium text-sm md:text-base",
+                description: "text-text-forgot-pass text-sm md:text-base font-normal",
               }}
               description="Check this box if the coupon should not apply to items on sale. Per-item coupons will only work if the item is not on sale. Per-cart coupons will only work if there are items in the cart that are not on sale."
             />

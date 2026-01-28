@@ -5,7 +5,7 @@ const LimitsTabBody = () => {
   return (
     <VendorDashboardTableWrapper>
       <form>
-        <div className="flex gap-6 w-[60%]">
+        <div className="flex flex-col md:flex-row gap-6 md:w-[60%] w-full">
           <InputField
             label="Usage limit per coupon"
             placeholder="Choose a Status"

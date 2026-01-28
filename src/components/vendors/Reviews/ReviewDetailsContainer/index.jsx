@@ -13,22 +13,22 @@ const ReviewDetailsContainer = () => {
           <Product />
           <Icons.CircleChevronRight size={28} />
         </div>
-        <div className="grid grid-cols-2 gap-28">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-28">
           <Review />
           <Review />
         </div>
         <Divider className="bg-transparent border-solid border-vendor-table-divider" />
-        <div className="grid grid-cols-2  gap-28">
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-28">
           <Review />
           <Review />
         </div>
         <Divider className="bg-transparent border-solid border-vendor-table-divider" />
-        <div className="grid grid-cols-2  gap-28">
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-28">
           <Review />
           <Review />
         </div>
         <Divider className="bg-transparent border-solid border-vendor-table-divider" />
-        <div className="grid grid-cols-2  gap-28">
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-28">
           <Review />
           <Review />
         </div>

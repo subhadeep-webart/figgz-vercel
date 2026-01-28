@@ -1,17 +1,4 @@
-// import { Icons } from "@/assets";
 
-// const DashboardCardIcon = (
-// ) => {
-//   return (
-//     <div className="relative h-12 w-12 rounded-full flex justify-center items-center calendar-cut-border">
-//         <div className="w-9 h-9 rounded-full bg-vendor-card-info flex justify-center items-center">
-//             <Icons.CalendarCheck fill={"#003984"} stroke="#ffffff" />
-//         </div>
-//     </div>
-//   );
-// };
-
-// export default DashboardCardIcon;
 
 import { Icons } from "@/assets";
 import { cn } from "@heroui/react";
@@ -29,13 +16,13 @@ const DashboardCardIcon = ({
   return (
     <div
       className={cn(
-        "relative h-12 w-12 rounded-full flex justify-center items-center calendar-cut-border",
+        "relative h-8 w-8 md:h-12 md:w-12 rounded-full flex justify-center items-center calendar-cut-border",
         outerClassName
       )}
     >
       <div
         className={cn(
-          "w-9 h-9 rounded-full bg-vendor-card-info flex justify-center items-center",
+          "w-6 h-6 md:w-9 md:h-9 rounded-full bg-vendor-card-info flex justify-center items-center",
           innerClassName
         )}
       >

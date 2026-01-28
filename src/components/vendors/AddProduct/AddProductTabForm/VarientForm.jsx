@@ -27,13 +27,13 @@ const VarientForm = () => {
   }, []);
   return (
     <VendorDashboardTableWrapper>
-      <h3 className="font-semibold text-lg text-avatar-heading !mb-4">
+      <h3 className="font-semibold text-sm md:text-lg text-avatar-heading !mb-4">
         Variants
       </h3>
       <form>
         <div className="flex flex-col gap-4">
-          <div className="flex gap-6">
-            <div className="w-[50%]">
+          <div className="flex flex-col md:flex-row  gap-6">
+            <div className="md:w-[50%] w-full">
               <label className="font-semibold text-sm text-[#000000]">
                 Size
               </label>
@@ -45,7 +45,7 @@ const VarientForm = () => {
                 ]}
               />
             </div>
-            <div className="w-[50%]">
+            <div className="md:w-[50%] w-full">
               <label className="font-semibold text-sm text-[#000000]">
                 Material
               </label>

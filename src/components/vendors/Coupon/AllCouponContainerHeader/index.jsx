@@ -16,7 +16,7 @@ const AllCouponContainerHeader = () => {
       headerText="All Coupon"
       className="border-l-3 border-border-vendor-card-header !mb-4  !pl-3"
     >
-      <div className="flex gap-3 justify-end items-center w-full">
+      <div className="flex flex-col md:flex-row gap-3 justify-end items-center w-full">
         <div className="border-product-search border-1 rounded-4xl max-w-[122px] w-full">
           <Input
             classNames={{
@@ -28,7 +28,7 @@ const AllCouponContainerHeader = () => {
             placeholder="Search"
           />
         </div>
-        <div className="border-product-search border-1 rounded-4xl max-w-[209px] w-full">
+        <div className="border-product-search border-1 rounded-4xl md:max-w-[209px] max-w-[122px] w-full">
           <Input
             classNames={{
               inputWrapper:
@@ -42,7 +42,7 @@ const AllCouponContainerHeader = () => {
           />
         </div>
         <CustomButton
-          className="bg-primary text-raisin text-sm font-normal w-36 !py-2.5"
+          className="bg-primary text-raisin text-sm font-normal md:w-36 w-28 !py-2.5"
           clickHandler={handleNewCoupon}
         >
           Add Coupon

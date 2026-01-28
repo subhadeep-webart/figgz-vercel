@@ -9,7 +9,7 @@ const Product = () => {
       router.push("/vendor/reviews/detail");
     };
   return (
-    <div className="flex gap-4 cursor-pointer" onClick={handleReview}>
+    <div className="flex gap-4 justify-between md:justify-normal cursor-pointer" onClick={handleReview}>
       <div className="w-16 h-16 rounded-full overflow-hidden">
         <img
           src={PUBLIC_IMAGES?.SellerShoe}
@@ -18,10 +18,10 @@ const Product = () => {
         />
       </div>
       <div className="flex flex-col gap-1">
-        <h4 className="font-semibold text-sm text-avatar-heading">
+        <h4 className="font-semibold text-xs sm:text-sm text-avatar-heading">
           Adidas Terrex AX4 Mid Gore
         </h4>
-        <p className="font-normal text-sm text-gray">
+        <p className="font-normal text-xs sm:text-sm text-gray">
           No. of reviews
           <span className="font-semibold text-avatar-heading">: 45</span>
         </p>

@@ -10,12 +10,12 @@ const MembershipForm = () => {
     };
   
   return (
-    <div className="max-w-[580px] w-full flex flex-col gap-5 items-center text-center !py-4">
+    <div className="md:max-w-[580px] max-w-[288px] w-full flex flex-col gap-5 items-center text-center !py-4">
         <img src={PUBLIC_IMAGES.VendorMembership} className="max-w-[159px] max-h-[130px] w-full h-full"/>
-      <h1 className="text-foreground font-bold text-sm md:text-2xl ">
+      <h1 className="text-foreground font-bold text-base md:text-2xl ">
         Vendor Registration Membership Fee
       </h1>
-      <p className="text-base text-text-payment-info font-normal leading-7 ">
+      <p className="text-xs md:text-base text-text-payment-info font-normal leading-7 ">
         Welcome to our platform! Before you can start listing and selling your
         products, you must complete the registration process and pay a
         membership fee. This fee is required to ensure continuous access to all
@@ -28,7 +28,7 @@ const MembershipForm = () => {
       <CustomButton className="bg-primary w-1/3 text-raisin font-semibold text-xs md:text-sm py-4" clickHandler={handleMembership}>
         Pay $49.99
       </CustomButton>
-      <p className="text-base text-invoice-text font-normal leading-7 ">
+      <p className="text-[10px] md:text-base text-invoice-text font-normal leading-7 ">
         Membership fee is auto-renewed every month & You can Cancel it anytime.
       </p>
     </div>

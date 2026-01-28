@@ -9,7 +9,7 @@ const GeneralTabBody = () => {
     <VendorDashboardTableWrapper>
       <form>
         <div className="flex flex-col gap-4">
-          <div className="flex gap-6">
+          <div className="flex flex-col md:flex-row gap-6">
             <InputField
               label="Discount type"
               placeholder="Choose a Status"
@@ -38,8 +38,8 @@ const GeneralTabBody = () => {
             <Radio
               classNames={{
                 base: "flex gap-3 items-start",
-                label: "text-black font-medium text-base",
-                description: "text-text-forgot-pass text-base font-normal",
+                label: "text-black font-medium text-sm md:text-base",
+                description: "text-text-forgot-pass text-sm md:text-base font-normal",
               }}
               description="Check this box if the coupon grants free shipping. A free shipping method must be enabled in your shipping zone and be set to require a valid free shipping coupon (see the 'Free Shipping Requires' setting)."
             />

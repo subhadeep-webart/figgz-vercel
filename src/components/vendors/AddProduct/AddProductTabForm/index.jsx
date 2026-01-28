@@ -8,14 +8,14 @@ import VarientForm from "./VarientForm";
 
 const AddProductTabForm = () => {
   return (
-    <div className="flex gap-4">
-      <div className="w-[70%] flex flex-col gap-6">
+    <div className="flex flex-col md:flex-row gap-4">
+      <div className="md:w-[70%] w-full flex flex-col gap-6">
         <GeneralForm />
         <InventoryForm />
         <ShippingForm/>
         <VarientForm/>
       </div>
-      <div className="w-[30%] flex flex-col gap-6">
+      <div className="md:w-[30%] w-full flex flex-col gap-6">
         <StatusForm />
         <UploadImageForm/>
         <PurchaseInvoiceForm/>

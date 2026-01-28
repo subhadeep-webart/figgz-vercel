@@ -2,9 +2,10 @@
 
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 import CaraousalNavigation from "../CaraousalNavigation";
 
 const CategorySlider = ({
@@ -36,9 +37,11 @@ const CategorySlider = ({
   return (
     <div className="relative group">
       <Swiper
-        modules={[Navigation]}
-        // slidesPerView={slidesPerView}
-        // slidesPerGroup={slidesPerGroup}
+        modules={[Navigation, Pagination]}
+        pagination={{
+          clickable: true,
+          enabled: false,
+        }}
         spaceBetween={spaceBetween}
         loop
         speed={600}
@@ -52,18 +55,30 @@ const CategorySlider = ({
           0: {
             slidesPerView: 2,
             slidesPerGroup: 2,
+            pagination: {
+              enabled: true,
+            },
           },
           640: {
             slidesPerView: 3,
             slidesPerGroup: 3,
+            pagination: {
+              enabled: true,
+            },
           },
           1024: {
             slidesPerView: 5,
             slidesPerGroup: 5,
+            pagination: {
+              enabled: false,
+            },
           },
           1280: {
             slidesPerView: 6,
             slidesPerGroup: 6,
+            pagination: {
+              enabled: false,
+            },
           },
         }}
         {...swiperProps}
@@ -74,6 +89,7 @@ const CategorySlider = ({
           </SwiperSlide>
         ))}
       </Swiper>
+      <div className="hidden md:block">
       <CaraousalNavigation
         prevRef={prevRef}
         nextRef={nextRef}
@@ -81,6 +97,7 @@ const CategorySlider = ({
         onNextClick={handleNextClick}
         buttonStyle={"min-h-7 h-7 min-w-7 !w-7"}
       />
+      </div>
     </div>
   );
 };

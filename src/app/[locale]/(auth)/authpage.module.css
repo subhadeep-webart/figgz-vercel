@@ -11,7 +11,7 @@
   position: relative;
   padding-top: 28px;
   padding-bottom: 108px;
-  border-top: 1px solid #C3C3C3;
+  border-top: 1px solid #c3c3c3;
 }
 
 .login::after {
@@ -57,9 +57,9 @@
 }
 
 @media (max-width: 480px) {
-
   .login::after,
-  .signup::after {
+  .signup::after,
+  .vendor_signup::after {
     display: none;
   }
 }

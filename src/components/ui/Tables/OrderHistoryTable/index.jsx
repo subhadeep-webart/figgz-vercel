@@ -1,6 +1,5 @@
 "use client"
 import { Icons } from "@/assets";
-import { ORDER_HISTORY_TABLE_HEADER } from "@/constants";
 import SingleImageCard from "../../Cards/SingleImageCard";
 import TableWrapper from "../components/TableWrapper";
 

@@ -1,6 +1,5 @@
 "use client";
 
-import UserSidebarMenu from "../../UserProfileSidebar/UserSidebarMenu";
 import { USER_SIDEBAR_MENU } from "@/constants";
 
 import { Swiper, SwiperSlide } from "swiper/react";

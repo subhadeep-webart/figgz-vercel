@@ -58,7 +58,7 @@ const ReturnedProductsContainer = () => {
         return (
           <div className="flex gap-2">
             <div className="flex flex-col ">
-              <p className="text-sm">TXN001</p>
+              <p className="text-xs md:text-sm">TXN001</p>
             </div>
           </div>
         );
@@ -66,33 +66,33 @@ const ReturnedProductsContainer = () => {
       case "order_number":
         return (
           <div className="flex flex-col">
-            <p className="text-vendor-base text-sm">#8745877</p>
+            <p className="text-vendor-base text-xs md:text-sm">#8745877</p>
           </div>
         );
 
       case "product_name":
         return (
           <div className="relative flex flex-col">
-            <p className="text-vendor-base text-sm">Yellow Excavato</p>
+            <p className="text-vendor-base text-xs md:text-sm">Yellow Excavato</p>
           </div>
         );
 
       case "customer":
         return (
           <div className="flex flex-col">
-            <p className="text-vendor-base text-sm">Johansan Doe</p>
+            <p className="text-vendor-base text-xs md:text-sm">Johansan Doe</p>
           </div>
         );
       case "return_date":
         return (
           <div className="flex flex-col">
-            <p className="text-vendor-base text-sm">24 April 2025</p>
+            <p className="text-vendor-base text-xs md:text-sm">24 April 2025</p>
           </div>
         );
       case "reason":
         return (
           <div className="flex flex-col">
-            <p className="text-vendor-base text-sm">Damaged during shipping</p>
+            <p className="text-vendor-base text-xs md:text-sm">Damaged during shipping</p>
           </div>
         );
       case "status":

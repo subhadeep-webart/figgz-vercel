@@ -5,7 +5,7 @@ import { Input } from "@heroui/react";
 
 const InvoiceHeader = () => {
   return (
-    <div className="flex gap-3 justify-between items-center w-full">
+    <div className="flex flex-col md:flex-row gap-3 md:justify-between items-center w-full">
       <div className="flex gap-2">
          <CustomButton
           className="bg-transparent text-vendor-warning border border-vendor-warning text-xs font-normal w-24 !py-2.5"
@@ -45,7 +45,7 @@ const InvoiceHeader = () => {
             placeholder="Status"
           />
         </div>
-         <div className="border-product-search border-1 rounded-4xl max-w-[239px] w-full">
+         <div className="border-product-search border-1 rounded-4xl max-w-[239px] w-full hidden md:block">
           <Input
             classNames={{
               inputWrapper:
@@ -59,6 +59,20 @@ const InvoiceHeader = () => {
           />
         </div>
       </div>
+
+        <div className="border-product-search border-1 rounded-4xl max-w-[239px] w-full md:hidden">
+          <Input
+            classNames={{
+              inputWrapper:
+                "bg-transparent hover:!bg-transparent shadow-none group-data-[focus=true]:bg-transparent",
+              innerWrapper: "!px-4",
+            }}
+            endContent={
+              <Icons.CalendarCheck className="text-black !px-2" size={40} />
+            }
+            placeholder="07/10/2025 - 07/16/2025"
+          />
+        </div>
     </div>
   );
 };

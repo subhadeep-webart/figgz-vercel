@@ -1,4 +1,3 @@
-
 import Comments from "./Comments";
 import DeliverySummary from "./DeliverySummary";
 import OrderDetails from "./OrderDetails";
@@ -6,21 +5,24 @@ import OrderInfos from "./OrderInfos";
 
 const OrderInfoSection = () => {
   return (
-    <section >
-        <div className="!pt-9 !pb-11 !px-14 border border-order-info-border rounded-3xl">
-      <div className="grid grid-cols-12 gap-8">
-        <div className="col-span-3">
-        <OrderInfos />
+    <section>
+      <div className="md:!pt-9 md:!pb-11 md:!px-14 !p-6 border border-order-info-border rounded-3xl">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+          <div className="md:col-span-3">
+            <OrderInfos />
+          </div>
+          <div className="md:col-span-5">
+            <OrderDetails />
+          </div>
+          <div className="md:col-span-4 hidden md:block">
+            <DeliverySummary />
+          </div>
         </div>
-        <div className="col-span-5">
-        <OrderDetails />
-        </div>
-        <div className="col-span-4">
+      </div>
+      <div className="md:hidden !mt-4">
         <DeliverySummary />
-        </div>
       </div>
-      </div>
-      <Comments/>
+      <Comments />
     </section>
   );
 };

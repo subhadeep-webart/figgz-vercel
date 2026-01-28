@@ -10,9 +10,9 @@ const PayoutDetailsContainer = () => {
   return (
     <VendorDashboardTableWrapper>
       <div className="flex flex-col gap-2.5">
-        <h3 className="font-semibold text-xl text-[#000000]">Payout Details</h3>
-        <div className="flex justify-between">
-          <div className="bg-sidebar-icon-container rounded-xl !p-5 max-w-[440px] w-full flex justify-between">
+        <h3 className="font-semibold text-base md:text-xl text-[#000000]">Payout Details</h3>
+        <div className="flex flex-col gap-2 md:gap-0 md:flex-row md:justify-between">
+          <div className="bg-sidebar-icon-container rounded-xl !p-5 max-w-[440px] w-full flex flex-col md:flex-row gap-2 md:gap-0 md:justify-between">
             <div>
               <h3 className="font-semibold text-sm text-dark-gray !mb-1">
                 Amount to be paid

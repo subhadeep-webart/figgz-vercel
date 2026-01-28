@@ -5,7 +5,7 @@ import TextareaField from "@/components/ui/TextArea";
 const GeneralForm = () => {
   return (
     <VendorDashboardTableWrapper>
-        <h3 className="font-semibold text-lg text-avatar-heading !mb-4">General</h3>
+        <h3 className="font-semibold text-sm md:text-lg text-avatar-heading !mb-4">General</h3>
       <form>
         <div className="flex flex-col gap-4">
           <InputField
@@ -46,7 +46,7 @@ const GeneralForm = () => {
               input: ["min-h-[120px]"],
             }}
           />
-          <div className="flex gap-6">
+          <div className="flex flex-col md:flex-row gap-6">
             <InputField
               label="Regular price ($)"
               placeholder="Choose a Status"

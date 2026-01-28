@@ -4,8 +4,8 @@ const VendorAnnouncementCard = ({ annoucementHeader, announcementContent,classNa
     return (
         <div className={cn("!px-9 !py-8 rounded-3xl shadow-md bg-white",className)}>
             <div className="flex justify-between !mb-2">
-            <h3 className="font-medium text-lg text-secondary">{annoucementHeader}</h3>
-            <span className="font-normal text-sm text-text-forgot-pass">24 April, 2025</span>
+            <h3 className="font-medium text-sm md:text-lg text-secondary">{annoucementHeader}</h3>
+            <span className="font-normal text-xs md:text-sm text-text-forgot-pass">24 April, 2025</span>
             </div>
             <div className={styles.announcement_inner}>
                 {announcementContent}

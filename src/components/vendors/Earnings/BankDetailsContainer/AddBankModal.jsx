@@ -17,7 +17,7 @@ const AddBankModal = () => {
   return (
     <>
       <CustomButton
-        className="bg-primary text-raisin text-sm font-medium w-36 !py-2.5"
+        className="bg-primary text-raisin text-sm font-medium md:w-36 w-28 md:!py-2.5 hidden md:block"
         clickHandler={onOpen}
       >
         Add Bank

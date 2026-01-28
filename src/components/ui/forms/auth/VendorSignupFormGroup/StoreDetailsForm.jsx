@@ -22,8 +22,8 @@ const StoreDetailsForm = () => {
   };
   return (
     <>
-      <div className={styles.signup_form_container}>
-        <h1 className="text-foreground font-bold text-sm md:text-xl flex items-center md:items-start">
+      <div className={styles.vendor_form_container}>
+        <h1 className="text-foreground font-bold text-sm md:text-xl flex items-start">
           Let’s Get Your Store Online!
         </h1>
         <div className="flex gap-2 justify-start items-center">
@@ -37,7 +37,7 @@ const StoreDetailsForm = () => {
               indicator: "stroke-[#FEA800]",
             }}
           />
-          <span className="text-raisin font-semibold text-base">
+          <span className="text-raisin font-semibold text-sm md:text-base">
             Store Details
           </span>
         </div>
@@ -51,7 +51,7 @@ const StoreDetailsForm = () => {
             />
           </div>
 
-          <div className="col-span-4">
+          <div className="col-span-6 md:col-span-4">
             <InputField
               label="Return & Refund Policy"
               placeholder="Upload Logo"
@@ -59,7 +59,7 @@ const StoreDetailsForm = () => {
               endContent={<Icons.Upload size={24} className="text-black" />}
             />
           </div>
-          <div className="col-span-2 flex items-end">
+          <div className="col-span-6 md:col-span-2 flex items-end">
             <Checkbox
               radius="sm"
               classNames={{
@@ -70,7 +70,7 @@ const StoreDetailsForm = () => {
             </Checkbox>
           </div>
 
-          <div className="col-span-4">
+          <div className="col-span-6 md:col-span-4">
             <InputField
               label="Shipping Policy"
               placeholder="Upload Logo"
@@ -78,7 +78,7 @@ const StoreDetailsForm = () => {
               endContent={<Icons.Upload size={24} className="text-black" />}
             />
           </div>
-          <div className="col-span-2 flex items-end">
+          <div className="col-span-6 md:col-span-2 flex items-end">
             <Checkbox
               radius="sm"
               classNames={{
@@ -105,14 +105,14 @@ const StoreDetailsForm = () => {
 
         <div className="w-full flex gap-4">
           <CustomButton
-            className="bg-transparent text-secondary font-semibold text-[10px] lg:text-sm border-secondary border-1 !px-2 lg:!px-4 w-48"
+            className="bg-transparent text-secondary font-semibold text-[10px] lg:text-sm border-secondary border-1 md:!px-4 md:w-48 w-1/2"
             variant="bordered"
             clickHandler={handlePrevious}
           >
             Previous
           </CustomButton>
           <CustomButton
-            className="bg-primary w-48 text-raisin font-semibold text-xs md:text-sm py-4"
+            className="bg-primary md:w-48 w-1/2 text-raisin font-semibold text-xs md:text-sm !px-4"
             clickHandler={handleRegister}
           >
             Save & Next

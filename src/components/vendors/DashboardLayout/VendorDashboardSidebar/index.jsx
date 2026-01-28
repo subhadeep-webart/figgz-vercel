@@ -3,7 +3,7 @@ import ProfileDetailsContainer from "./ProfileDetailsContainer";
 
 const VendorDashboardSidebar = () => {
   return (
-    <aside className="w-[20%] section_padding">
+    <aside className="w-[20%] section_padding hidden md:block">
       <div className="relative z-10">
         <ProfileDetailsContainer />
       </div>

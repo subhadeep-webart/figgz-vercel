@@ -7,11 +7,11 @@ import { Radio, RadioGroup } from "@heroui/react";
 const InventoryForm = () => {
   return (
     <VendorDashboardTableWrapper>
-      <h3 className="font-semibold text-lg text-avatar-heading !mb-4">Inventory</h3>
+      <h3 className="font-semibold text-sm md:text-lg text-avatar-heading !mb-4">Inventory</h3>
       <form>
         <div className="flex flex-col gap-4">
        
-          <div className="flex gap-6">
+          <div className="flex flex-col md:flex-row gap-6">
             <InputField label="SKU" placeholder="Enter Name" type="text" />
             <InputField
               label="GTIN, UPC, EAN, or ISBN"
@@ -44,8 +44,8 @@ const InventoryForm = () => {
             <Radio
               classNames={{
                 base: "flex gap-3 items-start",
-                label: "text-black font-medium text-base",
-                description: "text-text-forgot-pass text-base font-normal",
+                label: "text-black font-medium text-sm md:text-base",
+                description: "text-text-forgot-pass text-sm md:text-base font-normal",
               }}
               description="Limit purchases to 1 item per order"
             />

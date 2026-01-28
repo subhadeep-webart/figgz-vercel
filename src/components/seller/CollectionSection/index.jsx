@@ -8,7 +8,7 @@ const CollectionSection=()=>{
     return(
         <section>
           <ProductCatalogSectionWrapper id="style_collection" headerText="Gen Z Style Collection" isButton={false} isSelect={true}>
-             <div className="grid grid-cols-4 gap-7">
+             <div className="grid grid-cols-2 md:grid-cols-4 md:gap-7 gap-2">
         <ProductCard className="max-w-80">
           <ProductCardImageContainer />
           <ProductDetailsContainer />

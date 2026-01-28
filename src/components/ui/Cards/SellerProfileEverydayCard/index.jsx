@@ -25,8 +25,8 @@ const SellerProfileEverydayCard = ({
                 {name}
               </span>
             </div>
-            <h3 className="font-bold text-xl text-foreground">{title1}</h3>
-            <span className="font-bold text-xl text-foreground"> {title2}</span>
+            <h3 className="font-bold text-base md:text-xl text-foreground">{title1}</h3>
+            <span className="font-bold text-base md:text-xl text-foreground"> {title2}</span>
             <p className="font-normal text-sm text-product-text-info">
               {description}
             </p>

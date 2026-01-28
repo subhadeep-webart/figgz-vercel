@@ -374,6 +374,29 @@ body {
   padding-inline: 14px !important;
 }
 
+/* Pagination container */
+.category_navigation_slider_wrapper .swiper-pagination {
+  bottom: 8px;
+}
+
+/* Default dot */
+.category_navigation_slider_wrapper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: #d1d5db; 
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+/* Active dot */
+.category_navigation_slider_wrapper .swiper-pagination-bullet-active {
+  width: 8px;
+  border-radius: 9999px;
+  background-color: #000;
+}
+
+
+
 .section_padding {
   padding-block: 28px;
 }

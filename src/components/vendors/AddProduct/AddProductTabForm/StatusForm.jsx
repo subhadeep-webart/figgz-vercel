@@ -26,7 +26,7 @@ const StatusForm = () => {
             <label className="font-semibold text-sm text-[#000000]">
               Publish immediately
             </label>
-            <div className="flex justify-between gap-4">
+            <div className="flex flex-col md:flex-row md:justify-between gap-4">
               <InputField placeholder="Date" type="text" />
               <InputField placeholder="Time" type="text" />
             </div>

@@ -22,8 +22,8 @@ const AddressDetailsForm = () => {
   };
   return (
     <>
-      <div className={styles.signup_form_container}>
-        <h1 className="text-foreground font-bold text-sm md:text-2xl flex items-center md:items-start">
+      <div className={styles.vendor_form_container}>
+        <h1 className="text-foreground font-bold text-sm md:text-2xl flex items-start">
           Let’s Get Your Store Online!
         </h1>
         <div className="flex gap-2 justify-between items-center w-full">
@@ -38,19 +38,19 @@ const AddressDetailsForm = () => {
                 indicator: "stroke-[#FEA800]",
               }}
             />
-            <p className="text-raisin font-semibold text-base">
+            <p className="text-raisin font-semibold text-sm md:text-base">
               Address Details
             </p>
           </div>
           <div className="flex gap-1 items-center w-fit">
             <Icons.GpsLocationIcon size={27} />
-            <p className="font-medium text-sm underline underline-secondary text-nowrap text-secondary">
+            <p className="font-medium text-xs md:text-sm underline underline-secondary text-nowrap text-secondary">
               GPS Location
             </p>
           </div>
         </div>
         <div className="w-full flex flex-col gap-6">
-          <div className="grid grid-cols-12 gap-4 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-4 w-full">
             <div className="w-full col-span-6">
               <InputField
                 label="Business Address Line 1"
@@ -66,7 +66,7 @@ const AddressDetailsForm = () => {
               />
             </div>
           </div>
-          <div className="w-full grid grid-cols-12 gap-4">
+          <div className="w-full grid grid-cols-1 md:grid-cols-12 gap-4">
             <div className="w-full col-span-4">
               <InputField
                 label="City"
@@ -89,7 +89,7 @@ const AddressDetailsForm = () => {
               />
             </div>
           </div>
-          <div className="w-full grid grid-cols-12 gap-4">
+          <div className="w-full grid grid-cols-1 md:grid-cols-12 gap-4">
             <div className="w-full col-span-4">
               <InputField
                 label="Postal / ZIP Code"
@@ -115,14 +115,14 @@ const AddressDetailsForm = () => {
         </div>
         <div className="w-full flex gap-4">
           <CustomButton
-            className="bg-transparent text-secondary font-semibold text-[10px] lg:text-sm border-secondary border-1 !px-2 lg:!px-4 w-48"
+            className="bg-transparent text-secondary font-semibold text-[10px] lg:text-sm border-secondary border-1 md:!px-4 md:w-48 w-1/2"
             variant="bordered"
             clickHandler={handlePrevious}
           >
             Previous
           </CustomButton>
           <CustomButton
-            className="bg-primary w-48 text-raisin font-semibold text-xs md:text-sm py-4"
+            className="bg-primary md:w-48 text-raisin font-semibold text-xs md:text-sm md:px-4 w-1/2"
             clickHandler={handleRegister}
           >
             Save & Next

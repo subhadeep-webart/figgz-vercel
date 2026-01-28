@@ -1,13 +1,16 @@
 import { PUBLIC_IMAGES } from "@/assets";
-import BannerSection from "@/components/shared/Banner/BannerSection";
-
+import BannerComponent from "@/components/shared/Banner/BannerComponent";
+import DealsBannerContent from "./DealsBannerContent";
 
 const DealsBannerSection = () => {
   return (
-    <section>
-      <BannerSection bgImage={PUBLIC_IMAGES.DealsOfferBannerBg} className="h-[500px] justify-end items-start !pt-14 !px-12" showDealsAndOfferInfo={true} />
-    </section>
-  )
+    <BannerComponent
+      bgImage={PUBLIC_IMAGES.DealsOfferBannerBg}
+      className="h-[500px] justify-end items-start !pt-14 !px-12"
+    >
+      <DealsBannerContent />
+    </BannerComponent>
+  );
 };
 
 export default DealsBannerSection;

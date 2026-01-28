@@ -71,9 +71,9 @@ const AllProductTableContainer = () => {
             <Avatar radius="md" src="https://i.pravatar.cc/150?u=a042581f4e29026024d" />
 
             <div className="flex flex-col text-vendor-base">
-              <p className="text-sm">Suspendisse a erat..</p>
-              <span className="text-xs">SKU No: 4578</span>
-              <span className="inline-block text-xs text-product-active !mt-1">
+              <p className="text-xs md:text-sm">Suspendisse a erat..</p>
+              <span className="text-[10px] md:text-xs">SKU No: 4578</span>
+              <span className="inline-block text-[10px] md:text-xs text-product-active !mt-1">
                 Active
               </span>
             </div>
@@ -83,39 +83,39 @@ const AllProductTableContainer = () => {
       case "date":
         return (
           <div className="flex flex-col">
-            <p className="text-vendor-base text-sm">2025-07-10</p>
+            <p className="text-vendor-base text-xs md:text-sm">2025-07-10</p>
           </div>
         );
 
       case "views":
         return (
           <div className="relative flex flex-col">
-            <p className="text-vendor-base text-sm">5874</p>
+            <p className="text-vendor-base text-xs md:text-sm">5874</p>
           </div>
         );
 
       case "price":
         return (
           <div className="flex flex-col">
-            <p className="text-vendor-base text-sm">$9874</p>
+            <p className="text-vendor-base text-xs md:text-sm">$9874</p>
           </div>
         );
       case "profit":
         return (
           <div className="flex flex-col">
-            <p className="text-vendor-base text-sm">$98</p>
+            <p className="text-vendor-base text-xs md:text-sm">$98</p>
           </div>
         );
       case "inventory":
         return (
           <div className="flex flex-col">
-            <p className="text-vendor-base text-sm">100 in stock</p>
+            <p className="text-vendor-base text-xs md:text-sm">100 in stock</p>
           </div>
         );
       case "category":
         return (
           <div className="flex flex-col">
-            <p className="text-vendor-base text-sm">Fashion</p>
+            <p className="text-vendor-base text-xs md:text-sm">Fashion</p>
           </div>
         );
 

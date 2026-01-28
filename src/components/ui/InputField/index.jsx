@@ -40,7 +40,7 @@ const InputField = ({
       "!shadow-none",
     ],
     input: [
-      "text-base",
+      "text-sm md:text-base",
       "font-normal",
       "placeholder:text-[#919191]",
       "placeholder:text-[15px]",

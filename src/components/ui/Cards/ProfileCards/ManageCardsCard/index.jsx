@@ -7,9 +7,9 @@ import Image from "next/image";
 const ManageCardsCard = ({logo,cardNumber,buttonClassName,buttonLabel}) => {
   return (
     <div className="border border-faded rounded-2xl !mb-8">
-      <div className="flex justify-between items-center !px-9 !py-6">
+      <div className="flex justify-between items-center md:!px-9 !px-4 !py-6">
         <div className="flex items-center gap-1.5">
-        <div className="w-[151px] h-[54px] relative">
+        <div className="md:w-[151px] md:h-[54px] w-[86px] h-[23px] relative">
           <Image
             src={logo}
             alt="Profile"
@@ -18,12 +18,12 @@ const ManageCardsCard = ({logo,cardNumber,buttonClassName,buttonLabel}) => {
           />
         </div>
         {cardNumber && 
-        <span className="font-medium text-product-text-base text-[22px]">{cardNumber}</span>
+        <span className="font-medium text-product-text-base text-xs md:text-[22px]">{cardNumber}</span>
 }
         </div>
         <CustomChip
           className={cn(
-            "h-[47px] font-medium text-sm rounded-full border-1",
+            "h-[35px] md:h-[47px] font-medium text-xs md:text-sm rounded-full border-1 !px-3 md:!px-8",
             buttonClassName
           )}
           variant="bordered"

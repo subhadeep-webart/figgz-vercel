@@ -11,11 +11,11 @@ const DashboardPage = () => {
       <DashboardCardContainer headerName="Daily Statistics" />
       <DashboardCardContainerTotal headerName="Total Statistics" />
       <RecentOrderTableContainer />
-      <div className="grid grid-cols-12 gap-5">
-        <div className="col-span-7">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-5">
+        <div className="md:col-span-7">
             <LatestInvoiceContainer/>
         </div>
-        <div className="col-span-5">
+        <div className="md:col-span-5">
           {" "}
           <TopProductContainer />
         </div>

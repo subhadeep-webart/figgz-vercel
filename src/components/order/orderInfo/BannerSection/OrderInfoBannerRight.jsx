@@ -3,7 +3,8 @@ import Image from "next/image";
 
 const OrderInfoBannerRight = () => {
   return (
-    <div className="w-[580px] h-[393px] relative">
+    <div className="flex items-center justify-center">
+    <div className="md:w-[580px] md:h-[393px] w-[236px] h-[169px] relative">
       <Image
         src={PUBLIC_IMAGES.OrderInfoShoe}
         alt="Profile"
@@ -11,6 +12,7 @@ const OrderInfoBannerRight = () => {
         className=" object-contain"
         unoptimized
       />
+    </div>
     </div>
   );
 };

@@ -1,20 +1,22 @@
 import { PUBLIC_IMAGES } from "@/assets";
-import BannerSection from "@/components/shared/Banner/BannerSection";
 import SellerInfo from "./SellerInfo";
-
+import BannerComponent from "@/components/shared/Banner/BannerComponent";
+import SellerBannerContent from "./SellerBannerContent";
 
 const SellerBannerSection = () => {
   return (
     <section>
-      <BannerSection
-        bgImage={PUBLIC_IMAGES.SellerProfileBannerBg}
-        showSeller={true}
-        title="Style Starts Here"
-        subtitle="Connect with sellers from over"
-        highlight="Your Trusted Fashion Vendor"
-        countries="150"
-        className="items-center justify-end h-[509px] z-0"
-      />
+      <BannerComponent
+        bgImage={PUBLIC_IMAGES.SellerBannerBg}
+        className="items-center justify-end h-[396px] md:h-[509px] z-0"
+      >
+        <SellerBannerContent
+          title="Style Starts Here"
+          highlight="Your Trusted Fashion Vendor"
+          subtitle="Connect with sellers from over"
+          countries={150}
+        />
+      </BannerComponent>
       <div className="w-full flex justify-center !mt-[-80px] z-10">
         <SellerInfo />
       </div>

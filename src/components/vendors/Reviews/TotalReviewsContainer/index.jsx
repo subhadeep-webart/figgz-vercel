@@ -12,15 +12,15 @@ const {
 
 const TotalReviewsContainer = () => {
   return (
-    <VendorDashboardTableWrapper>
-      <div className="flex justify-between">
-        <div className="flex items-center justify-center gap-6">
+    <VendorDashboardTableWrapper >
+      <div className="flex flex-col md:flex-row md:justify-between">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-center justify-start gap-6">
           <TotalReview />
-          <Divider orientation="vertical" className="h-[71px]" />
+          <Divider orientation="vertical" className="h-[71px] hidden md:block" />
           <ReviewRatings />
-          <Divider orientation="vertical" className="h-[71px]" />
+          <Divider orientation="vertical" className="h-[71px] hidden md:block" />
           <div className="flex flex-col gap-1">
-            <Ratings />
+            <Ratings  className="justify-start md:justify-center"/>
             <Ratings
               rating={4}
               reviews="1.0K"
@@ -47,7 +47,7 @@ const TotalReviewsContainer = () => {
             />
           </div>
         </div>
-        <div className="itmes-start">
+        <div className="itmes-start hidden md:block">
           <div className="border-product-search border-1 rounded-sm max-w-[122px] w-full">
             <div>
               <SelectField

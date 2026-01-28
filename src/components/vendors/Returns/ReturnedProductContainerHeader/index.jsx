@@ -7,9 +7,9 @@ const ReturnedProductContainerHeader = () => {
   return (
     <VendorCardHeaderWrapper
       headerText="Returned Products"
-      className="border-l-3 border-border-vendor-card-header !mb-4  !pl-3"
+      className="border-l-3 border-border-vendor-card-header !mb-4 !pl-3"
     >
-      <div className="flex gap-3 justify-end items-center max-w-[432px] w-full">
+      <div className="md:flex gap-3 justify-end items-center max-w-[432px] w-full hidden">
         <div className="border-product-search border-1 rounded-4xl max-w-[122px] w-full">
           <Input
             classNames={{

@@ -16,11 +16,11 @@ const TabContainer = () => {
   const activeTab = pathname.split("/").pop();
 
   return (
-    <div className="flex gap-4">
+    <div className="flex md:gap-4 gap-1">
       {tabs.map((tab) => (
         <CustomButton
           key={tab.key}
-          className={`text-xs font-normal !py-2.5 bg-transparent ${tab.width} ${
+          className={`text-[10px] md:text-xs font-normal !py-2.5 bg-transparent ${tab.width} ${
             activeTab === tab.key
               ? " text-invoice-text border border-invoice-text"
               : " text-foreground border border-foreground"

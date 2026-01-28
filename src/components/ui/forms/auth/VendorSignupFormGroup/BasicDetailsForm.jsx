@@ -17,8 +17,8 @@ const BasicDetailsForm = () => {
   };
   return (
     <>
-      <div className={styles.signup_form_container}>
-        <h1 className="text-foreground font-bold text-sm md:text-2xl flex items-center md:items-start">
+      <div className={styles.vendor_form_container}>
+        <h1 className="text-foreground font-bold text-sm md:text-2xl flex items-start">
           Let’s Get Your Store Online!
         </h1>
         <div className="flex gap-2 justify-start items-center">
@@ -32,7 +32,7 @@ const BasicDetailsForm = () => {
               indicator: "stroke-[#FEA800]",
             }}
           />
-          <span className="text-raisin font-semibold text-base">
+          <span className="text-raisin font-semibold text-sm md:text-base">
             Basic Details
           </span>
         </div>

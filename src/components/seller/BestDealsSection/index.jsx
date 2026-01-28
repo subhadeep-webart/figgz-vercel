@@ -5,7 +5,7 @@ import Image from "next/image";
 const BestDealsSection=()=>{
     return(
         <section className="flex gap-9">
-       <div className="w-[934px] h-[506px] relative rounded-2xl">
+       <div className="w-[934px] h-[506px] relative rounded-2xl hidden md:block">
               <Image
                 src={PUBLIC_IMAGES.SellerBestDeal}
                 alt="Color 1 image"

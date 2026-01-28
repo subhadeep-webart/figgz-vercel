@@ -11,7 +11,7 @@ const EarningsGraphContainer = () => {
     <VendorDashboardTableWrapper>
       <div>
         <EarningGraphHeader />
-        <div className="!p-6">
+        <div className="md:!p-6 !pt-3">
           {/* <Graph /> */}
           <img src={PUBLIC_IMAGES.EarningGraph} />
         </div>

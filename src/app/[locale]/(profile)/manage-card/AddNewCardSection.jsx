@@ -9,9 +9,11 @@ const AddNewCardSection = () => {
         <Icons.CardIcon width={30} height={27} />
         <h3 className="font-bold text-base text-foreground">Add New Card</h3>
       </div>
+      <div className="border border-border-product-filter !p-5 md:border-none md:!p-0 rounded-3xl md:rounded-none">
       <NewCardForm/>
-      <div className="flex items-end justify-end !mt-12">
+      <div className="flex items-center justify-center md:items-end md:justify-end !mt-12">
       <CustomButton className="text-secondary !px-[60px] !py-3">Add Card</CustomButton>
+      </div>
       </div>
     </div>
   );

@@ -63,7 +63,7 @@ const InvoiceTable = () => {
         return (
           <div className="flex gap-2">
             <div className="flex flex-col ">
-              <p className="text-sm">TXN001</p>
+              <p className="text-xs md:text-sm">TXN001</p>
             </div>
           </div>
         );
@@ -71,33 +71,33 @@ const InvoiceTable = () => {
       case "invoice_for":
         return (
           <div className="flex flex-col">
-            <p className="text-vendor-base text-sm">Mauris sit amet</p>
+            <p className="text-vendor-base text-xs md:text-sm">Mauris sit amet</p>
           </div>
         );
 
       case "order":
         return (
           <div className="relative flex flex-col">
-            <p className="text-vendor-base text-sm">Shoe</p>
+            <p className="text-vendor-base text-xs md:text-sm">Shoe</p>
           </div>
         );
 
       case "payment_type":
         return (
           <div className="flex flex-col">
-            <p className="text-vendor-base text-sm">Card</p>
+            <p className="text-vendor-base text-xs md:text-sm">Card</p>
           </div>
         );
       case "amount":
         return (
           <div className="flex flex-col">
-            <p className="text-vendor-base text-sm">₹278200</p>
+            <p className="text-vendor-base text-xs md:text-sm">₹278200</p>
           </div>
         );
       case "date":
         return (
           <div className="flex flex-col">
-            <p className="text-vendor-base text-sm">15 May 2025,</p>
+            <p className="text-vendor-base text-xs md:text-sm">15 May 2025,</p>
             <span className="text-sm"> 10:00 AM</span>
           </div>
         );

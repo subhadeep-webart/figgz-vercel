@@ -20,7 +20,7 @@ export const animals = [
 ];
 const Comments = () => {
   return (
-    <div className="!px-[51px] !mt-[-24px]">
+    <div className="!px-[51px] !mt-[-24px] hidden md:block">
         <div className="grid grid-cols-12 gap-4">
             <div className="col-span-7">
       <CommentInput />

@@ -71,49 +71,49 @@ const AllCouponContainer = () => {
       case "code":
         return (
           <div className="flex flex-col">
-            <p className="text-sm  text-vendor-base">TXN001</p>
+            <p className="text-xs md:text-sm  text-vendor-base">TXN001</p>
           </div>
         );
 
       case "coupon_type":
         return (
           <div className="flex flex-col">
-            <p className="text-sm text-vendor-base">Percentage discount</p>
+            <p className="text-xs md:text-sm text-vendor-base">Percentage discount</p>
           </div>
         );
 
       case "coupon_amount":
         return (
           <div className="flex flex-col">
-            <p className="text-sm text-vendor-base">$120</p>
+            <p className="text-xs md:text-sm text-vendor-base">$120</p>
           </div>
         );
 
       case "description":
         return (
           <div className="flex flex-col max-w-xs">
-            <p className="text-sm text-vendor-base">-</p>
+            <p className="text-xs md:text-sm text-vendor-base">-</p>
           </div>
         );
 
       case "product_ids":
         return (
           <div className="flex flex-col">
-            <p className="text-sm text-vendor-base">874558</p>
+            <p className="text-xs md:text-sm text-vendor-base">874558</p>
           </div>
         );
 
       case "usage_limit":
         return (
           <div className="flex flex-col">
-            <p className="text-sm text-vendor-base">0/1</p>
+            <p className="text-xs md:text-sm text-vendor-base">0/1</p>
           </div>
         );
 
       case "expiry_date":
         return (
           <div className="flex flex-col">
-            <p className="text-sm text-vendor-base">02/25/2025</p>
+            <p className="text-xs md:text-sm text-vendor-base">02/25/2025</p>
           </div>
         );
 

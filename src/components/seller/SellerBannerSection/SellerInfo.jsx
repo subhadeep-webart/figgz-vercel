@@ -8,10 +8,11 @@ import CustomButton from "@/components/ui/Buttons/CustomButton";
 const SellerInfo = () => {
   return (
     <section
-      className={`relative rounded-xl !py-8 !px-10 ${styles.seller_info_box}`}
+      className={`relative rounded-xl !py-8 md:!px-10 !px-4 ${styles.seller_info_box}`}
     >
-      <div className="relative z-10 h-full flex">
-        <div className="flex flex-col gap-3 justify-center items-start !pr-7">
+      <div className="relative z-10 h-full flex flex-col gap-4 md:gap-0 md:flex-row">
+        <div className="flex flex-col gap-3 justify-center items-start md:!pr-7">
+          <div className="flex md:flex-col justify-between items-center md:items-start w-full">
           <div className="w-20 h-20 relative">
             <Image
               src={PUBLIC_IMAGES.SellerInfoProfile}
@@ -20,13 +21,14 @@ const SellerInfo = () => {
               className="w-full h-full object-cover rounded-full"
             />
           </div>
-          <div className="w-30 h-20 relative">
+          <div className="md:w-30 w-24 md:h-20 h-12 relative">
             <Image
               src={PUBLIC_IMAGES.SellerInfoIcon}
               alt="Icon"
               fill
               className="w-full h-full object-cover rounded-full"
             />
+          </div>
           </div>
           <h3 className="font-semibold text-lg text-secondary">
             Quality Products, Affordable Prices.
@@ -37,9 +39,9 @@ const SellerInfo = () => {
           </span>
           <Icons.StarsIcon width={120} height={18} />
         </div>
-        <Divider orientation="vertical" className="h-[310px] " />
-        <div className="flex flex-col gap-8 justify-center items-start !pl-7">
-          <div className="flex gap-9 items-center">
+        <Divider orientation="vertical" className="h-[310px] hidden md:block " />
+        <div className="flex flex-col gap-8 justify-center items-start md:!pl-7">
+          <div className="flex flex-col md:flex-row md:gap-9 gap-4 md:items-center items-start">
             <div>
               <h4 className="font-normal text-sm text-product-text-info">
                 Business Type
@@ -65,7 +67,7 @@ const SellerInfo = () => {
               </span>
             </div>
           </div>
-          <div className="flex gap-9 items-center">
+          <div className="flex flex-col md:flex-row md:gap-9 gap-4 md:items-center items-start">
             <div>
               <h4 className="font-normal text-sm text-product-text-info">
                 Business Mail
@@ -83,7 +85,7 @@ const SellerInfo = () => {
               </span>
             </div>
           </div>
-          <div className="flex items-center">
+          <div className="flex flex-col md:flex-row md:items-center items-start">
             <div>
               <h4 className="font-normal text-sm text-product-text-info">
                 Shipping & Returns Policy
@@ -96,7 +98,7 @@ const SellerInfo = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-end items-end">
+      <div className="md:flex justify-end items-end hidden">
         <CustomButton className="font-medium text-xs w-[162px] h-[41px] !mb-[-45px]">
           Explore More Poducts
         </CustomButton>

@@ -5,8 +5,8 @@ import { Input } from "@heroui/react";
 const EarningGraphHeader = () => {
   return (
     <div className="flex flex-col gap-3">
-      <div className="flex justify-between">
-        <h3 className="font-semibold text-xl text-avatar-heading">Earnings</h3>
+      <div className="flex flex-col md:flex-row gap-3 md:gap-0 md:justify-between">
+        <h3 className="font-semibold text-base md:text-xl text-avatar-heading">Earnings</h3>
         <div>
           <h3 className="font-semibold text-sm text-dark-gray">
             Total Earnings this Year
@@ -27,6 +27,7 @@ const EarningGraphHeader = () => {
           </h3>
           <span className="font-bold text-xl text-[#000000]">$16,659</span>
         </div>
+        
         <div className="flex gap-1">
           <div className="bg-teal w-4 h-4 rounded-md"></div>
           <h4 className="font-normal text-sm text-invoice-date">
